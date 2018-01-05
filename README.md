@@ -122,6 +122,10 @@ A library of PHP functions used by `create_tlp_latex_version.php`, and perhaps e
 
 The image used as a cover if `useBookCoverImage` is set to `true`;
 
+### To Do ###
+
+Coming, hopefully soon, will be a scripts for converting the LaTeX-based JSON to HTML-based JSON, and other scripts for creating HTML-based and ePub versions.
+
 ### License ###
 
 
@@ -130,5 +134,8 @@ Wittgenstein's book is in the Public Domain.
 This layout is released with a Create Commons ShareAlike-Attribution 3.0 license.
 
 The code in the scripts is GPLv3.
+
+
+
 
 Kevin C. Klement [klement@umass.edu](mailto:klement@umass.edu)
