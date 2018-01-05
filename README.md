@@ -57,27 +57,49 @@ This script was written for PHP 7.2+; I do not know whether or not is compatible
 These are JSON settings files that are used to create the PDF versions hosted on the project's main web page. See one of the files for the precise format. Here are some of the options.
 
 1. **passes**:  *Array.* Each element of the array represents a part of the text which is to be typeset in one pass-through.  They each have four sub-options:
+
     a. **minDepth**: *Integer.* The minimum number of digits after the decimal place a given proposition/remark must have to be included in the pass. The usual value here would be 0, unless you only want to include remarks, but not what they are remarks about.
+    
     b. **maxDepth**: *Integer.* Like mindepth, but the maximum number of digits. Possible values here are 0 through 5.
+    
     c. **startProposition**: *String.* Where in the text to start the pass; the usual value is "1". Note that this value is a string, not a float, and should be in quotation marks in the JSON.
+    
     d. **endProposition**: *String.* Where in the text to finish the pass; the usual value is "7". Also a string.
+
 2. **useDepthMarkers**:  *Boolean.* If true, horizontal lines will be printed between passes showing what depth range is included in the pass to follow.
+
 3. **includeCoverPage**: *Boolean.* Whether or not to include a cover page in the resulting PDF.
+
 4. **includeDedicationPage**: *Boolean.* Whether or not to include the dedication page in the resulting PDF.
+
 5. **includeRussellsIntro**: *Boolean.* Whether or not to include Russell's Introduction.
+
 6. **columnsForRussellsIntro**: *Integer.* Number of columns to typeset Russell's Introduction.
+
 7. **includePreface**: *Boolean.* Whether or not to include Wittgenstein's preface.
+
 8. **includeGerman**, **includeOgden**, **includePearsMcGuinness**: *Booleans.* Set to false to exclude the German, or one or both translation.
+
 9. **includeIndex**: *Boolean.* Whether or not to include the index from the Pears/McGuinness translation. Note that if the version has multiple passes, the Index will hyperlink only to the last pass.
+
 10. **columnsForIndex**: *Integer.* Number of columns for typsetting the index.
+
 11. **includeLicsenInfo**: *Boolean.* Whether or not to include a short statement of the licenses of the text, the typesetting, and a link to the project page.
+
 12. **useBookCoverImage**: *Boolean.* If true, and a cover page is used, creates a graphical cover as the first page of the PDF.
+
 13. **multicolumnLayout**: *Boolean.* If true, places the translations side-by-side(-by-side) on the same page; if false, typesets them on their own pages and creates hyperlinks between them (as in the ebook version).
+
 14. **ruleBetweenColumns**: *Boolean.* If true, places vertical lines between the columns in a multi-column layout.
+
 15. **distanceBetweenColumns**: *LaTeX length string.* Sets the spacing in between columns in a multo-column layout.
+
 16. **papersize**: *String.* Sets the dimensions of the PDF page. You can use a description such as "letterpaper" or "a4paper" (see the documentation for the LaTeX `geometry` package for a list), or dimensions included in curly braces for the width and height, e.g., "{8.5in,11in}".
+
 17. **landscape**: *Boolean.* Whether or not to set the PDF page in landscape mode.
+
 18. **margin**: *LaTeX length string.* Sets the size of margins around the PDF pages.
+
 19. **fontcommand**: *String.* Can contain arbitrary LaTeX preamble commands meant for choosing font packages, or making other aesthetic changes. Various options can be found at the [LaTeX font catalogue](http://www.tug.dk/FontCatalogue/). Remember to escape backslashes as `\\` in the JSON.
 
 The use of multiple passes is typically used to represent different stages in the "hierarchy" of TLP. This array may have only a single element if you want to typeset the entire book in one pass, or just a single stage in the hierarchy.
@@ -102,8 +124,11 @@ The image used as a cover if `useBookCoverImage` is set to `true`;
 
 ### License ###
 
-| Wittgenstein's book is in the Public Domain.
-| This layout is released with a Create Commons ShareAlike-Attribution 3.0 license.
-| The code in the scripts is GPLv3.
-|
-| Kevin C. Klement [klement@umass.edu](mailto:klement@umass.edu)
+
+Wittgenstein's book is in the Public Domain.
+
+This layout is released with a Create Commons ShareAlike-Attribution 3.0 license.
+
+The code in the scripts is GPLv3.
+
+Kevin C. Klement [klement@umass.edu](mailto:klement@umass.edu)
