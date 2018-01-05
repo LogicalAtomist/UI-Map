@@ -30,7 +30,7 @@ This is JSON file which represents the TLP as an object in which each "propositi
 
 The paragraphs of the preface come first and are given designations such a "P1" for paragraph one of the preface, matching the conventions in the index.
 
-Note that the values use custom LaTeX commands defined in the file `tlp_latex_custom_commands.tex`, and so this file, or a replacement for it, must be included one way or another in order for the LaTeX code to be used.
+Note that the values use custom LaTeX commands defined in the file `tlp_latex_custom_commands.tex`, and so this file, or a replacement for it, must be included one way or another in order for the LaTeX code to be used. The file also contains *unescaped* UTF-8 encoded Unicode characters such as ß, ä, —, etc, and so it should be edited with UTF-8/Unicode compliant editors, and the LaTeX `inputenc` package with the `utf8` option should always be loaded.
 
 This is the "master" text file, and future alterations to the text should be made to this file to propagate to other versions.
 
