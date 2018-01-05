@@ -56,7 +56,7 @@ if (!(isset($tlp->P1))) {
 \documentclass[oneside,openany,12pt]{book}
 %
 % For tracking changes
-\newcommand{\version}{0.50}
+\newcommand{\version}{<?php echo get_version_num(); ?>}
 %
 % For unicode input
 \usepackage[utf8]{inputenc}
