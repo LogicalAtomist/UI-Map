@@ -1,0 +1,30 @@
+{
+    "passes": [
+        {
+            "minDepth": 0,
+            "maxDepth": 5,
+            "startProposition": "1",
+            "endProposition": "7"
+        }
+    ],
+    "useDepthMarkers": false,
+    "includeCoverPage": true,
+    "includeDedicationPage": true,
+    "includeRussellsIntro": true,
+    "columnsForRussellsIntro": 1,
+    "includePreface": true,
+    "includeGerman": true,
+    "includeOgden": true,
+    "includePearsMcGuinness": true,
+    "includeIndex": true,
+    "columnsForIndex": 1,
+    "includeLicenseInfo": true,
+    "useBookCoverImage": true,
+    "multicolumnLayout": false,
+    "ruleBetweenColumns": false,
+    "distanceBetweenColumns": "1em",
+    "papersize": "{88.184mm,113.854mm}",
+    "landscape": false,
+    "margin": "2mm",
+    "fontcommand": "\\usepackage[T1]{fontenc}\\usepackage{fouriernc}"
+}
