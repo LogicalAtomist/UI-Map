@@ -1,5 +1,8 @@
 <?php
 
+// library file for side-by-side-by-side Tractatus
+// license: GPLv3
+
 date_default_timezone_set('America/New_York');
 
 function get_version_num() {

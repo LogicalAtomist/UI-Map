@@ -1,0 +1,60 @@
+{
+    "passes": [
+        {
+            "minDepth": 0,
+            "maxDepth": 0,
+            "startProposition": "1",
+            "endProposition": "7"
+        },
+        {
+            "minDepth": 0,
+            "maxDepth": 1,
+            "startProposition": "1",
+            "endProposition": "7"
+        },
+        {
+            "minDepth": 0,
+            "maxDepth": 2,
+            "startProposition": "1",
+            "endProposition": "7"
+        },
+        {
+            "minDepth": 0,
+            "maxDepth": 3,
+            "startProposition": "1",
+            "endProposition": "7"
+        },
+        {
+            "minDepth": 0,
+            "maxDepth": 4,
+            "startProposition": "1",
+            "endProposition": "7"
+        },
+        {
+            "minDepth": 0,
+            "maxDepth": 5,
+            "startProposition": "1",
+            "endProposition": "7"
+        }
+    ],
+    "useDepthMarkers": true,
+    "includeCoverPage": true,
+    "includeDedicationPage": true,
+    "includeRussellsIntro": true,
+    "columnsForRussellsIntro": 2,
+    "includePreface": true,
+    "includeGerman": true,
+    "includeOgden": true,
+    "includePearsMcGuinness": true,
+    "includeIndex": true,
+    "columnsForIndex": 3,
+    "includeLicenseInfo": true,
+    "useBookCoverImage": false,
+    "multicolumnLayout": true,
+    "ruleBetweenColumns": true,
+    "distanceBetweenColumns": "1em",
+    "papersize": "letterpaper",
+    "landscape": true,
+    "margin": "0.5in",
+    "fontcommand": "\\usepackage[T1]{fontenc}\\usepackage{fouriernc}"
+}
