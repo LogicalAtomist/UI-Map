@@ -1780,7 +1780,7 @@
             "In der logischen Syntax darf nie die Bedeutung eines Zeichens eine Rolle spielen; sie muss sich aufstellen lassen, ohne dass dabei von der \\germph{Bedeutung} eines Zeichens die Rede wäre, sie darf \\germph{nur} die Beschreibung der Ausdrücke voraussetzen."
         ],
         "Ogden": [
-            "In logical syntax the meaning of a sign ought never to play a r{\\^o}le; it must admit of being established without mention being thereby made of the \\emph{meaning} of a sign; it ought to presuppose \\emph{only} the description of the expressions."
+            "In logical syntax the meaning of a sign ought never to play a rôle; it must admit of being established without mention being thereby made of the \\emph{meaning} of a sign; it ought to presuppose \\emph{only} the description of the expressions."
         ],
         "PearsMcGuinness": [
             "In logical syntax the meaning of a sign should never play a role. It must be possible to establish logical syntax without mentioning the \\emph{meaning} of a sign: \\emph{only} the description of expressions may be presupposed."
@@ -5046,7 +5046,7 @@
             "(Also statt des Russellschen „$\\rsomed{x,y}$ $f(x,y)$“: „$\\rsomed{x,y} f(x,y) \\dlord \\rsomed{x}f(x,x)$“.)"
         ],
         "Ogden": [
-            "And analogously: not “$\\rsomed{x,y} f(x,y) \\rand$ \\linebreak \\mbox{$x=y$”, but “$\\rsomed{x} f(x,x)$”; and not} “$\\rsomed{x,y}$ $f(x,y) \\rand \\rnot x=y$”, but “$\\rsomed{x,y} f(x,y)$”.",
+            "And analogously: not “$\\rsomed{x,y} f(x,y) \\rand x=y$”, but “$\\rsomed{x} f(x,x)$”; and not “$\\rsomed{x,y} f(x,y) \\rand \\rnot x=y$”, but “$\\rsomed{x,y} f(x,y)$”.",
             "(Therefore instead of Russell’s “$\\rsomed{x,y}$ $f(x,y)$”: “$\\rsomed{x,y} f(x,y) \\dlord \\rsomed{x}f(x,x)$”.)"
         ],
         "PearsMcGuinness": [
@@ -5460,7 +5460,7 @@
     "5.62": {
         "German": [
             "Diese Bemerkung gibt den Schlüssel zur Entscheidung der Frage, inwieweit der Solipsismus eine Wahrheit ist.",
-            "Was der Solipsismus nämlich \\linebreak{}\\germph{meint}, ist ganz richtig, nur lässt es sich nicht \\germph{sagen}, sondern es zeigt sich.",
+            "Was der Solipsismus nämlich \\germph{meint}, ist ganz richtig, nur lässt es sich nicht \\germph{sagen}, sondern es zeigt sich.",
             "Dass die Welt \\germph{meine} Welt ist, das zeigt sich darin, dass die Grenzen \\germph{der} Sprache (der Sprache, die allein ich verstehe) die Grenzen \\germph{meiner} Welt bedeuten."
         ],
         "Ogden": [
