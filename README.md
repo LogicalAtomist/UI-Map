@@ -78,7 +78,7 @@ These are JSON settings files that are used to create the PDF versions hosted on
 
 7. **includePreface**: *Boolean.* Whether or not to include Wittgenstein's preface.
 
-8. **includeGerman**, **includeOgden**, **includePearsMcGuinness**: *Booleans.* Set to false to exclude the German, or one or both translation.
+8. **includeGerman**, **includeOgden**, **includePearsMcGuinness**: *Booleans.* Set to false to exclude the German, or one or both translation(s).
 
 9. **includeIndex**: *Boolean.* Whether or not to include the index from the Pears/McGuinness translation. Note that if the version has multiple passes, the Index will hyperlink only to the last pass.
 
@@ -124,18 +124,14 @@ The image used as a cover if `useBookCoverImage` is set to `true`;
 
 ### To Do ###
 
-Coming, hopefully soon, will be a scripts for converting the LaTeX-based JSON to HTML-based JSON, and other scripts for creating HTML-based and ePub versions.
+Coming, hopefully soon, will be a script for converting the LaTeX-based JSON to HTML-based JSON, and other scripts for creating HTML-based and ePub versions.
 
 ### License ###
 
-
 Wittgenstein's book is in the Public Domain.
 
-This layout is released with a Create Commons ShareAlike-Attribution 3.0 license.
+This layout is released with a Creative Commons ShareAlike-Attribution 3.0 license.
 
 The code in the scripts is GPLv3.
-
-
-
 
 Kevin C. Klement [klement@umass.edu](mailto:klement@umass.edu)
