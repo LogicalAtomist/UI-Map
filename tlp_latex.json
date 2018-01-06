@@ -3368,11 +3368,11 @@
             "Die Gruppen von Wahrheitsbedingungen, welche zu den Wahrheitsmöglichkeiten einer Anzahl von Elementarsätzen gehören, lassen sich in eine Reihe ordnen."
         ],
         "Ogden": [
-            "For $n$ \\mbox{elementary} propositions there are $\\mathrm{L}_n$ possible groups of truth-conditions.",
+            "For $n$ elementary propositions there are $\\mathrm{L}_n$ possible groups of truth-conditions.",
             "The groups of truth-conditions which belong to the truth-possibilities of a number of elementary propositions can be ordered in a series."
         ],
         "PearsMcGuinness": [
-            "For $n$ \\mbox{elementary} propositions there are $\\mathrm{L}_n$ possible groups of truth-conditions.",
+            "For $n$ elementary propositions there are $\\mathrm{L}_n$ possible groups of truth-conditions.",
             "The groups of truth-conditions that are obtainable from the truth-possibilities of a given number of elementary propositions can be arranged in a series."
         ]
     },
@@ -5042,7 +5042,7 @@
     },
     "5.532": {
         "German": [
-            "Und analog: Nicht „$\\rsomed{x,y} f(x,y) \\rand x=y$“\\mbox{, sondern „$\\rsomed{x} f(x,x)$“; und nicht} „$\\rsomed{x,y}$ $f(x,y) \\rand \\rnot x=y$“, sondern „$\\rsomed{x,y}$ $f(x,y)$“.",
+            "Und analog: Nicht „$\\rsomed{x,y} f(x,y) \\rand x=y$“, sondern „$\\rsomed{x} f(x,x)$“; und nicht „$\\rsomed{x,y} f(x,y) \\rand \\rnot x=y$“, sondern „$\\rsomed{x,y} f(x,y)$“.",
             "(Also statt des Russellschen „$\\rsomed{x,y}$ $f(x,y)$“: „$\\rsomed{x,y} f(x,y) \\dlord \\rsomed{x}f(x,x)$“.)"
         ],
         "Ogden": [
@@ -5064,7 +5064,7 @@
             "And if the proposition “\\emph{only} one $x$ satisfies $f(\\phantom{i})$” reads: “$\\rsomed{x} f\\negthinspace x \\mathrel{:} \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$”."
         ],
         "PearsMcGuinness": [
-            "\\mbox{Thus, for example, instead of ‘$\\ralldd{x} f\\negthinspace x$} $\\rimplies x=a$’ we write ‘$\\rsomed{x} f\\negthinspace x \\drimpliesd f\\negthinspace a \\mathrel{:}  \\rnot \\rsomed{x,y}$ $f\\negthinspace x \\rand f\\negthinspace y$’.",
+            "Thus, for example, instead of ‘$\\ralldd{x} f\\negthinspace x \\rimplies x=a$’ we write ‘$\\rsomed{x} f\\negthinspace x \\drimpliesd f\\negthinspace a \\mathrel{:}  \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$’.",
             "And the proposition, ‘\\emph{Only one} $x$ satisfies $f(\\phantom{i})$’, will read ‘$\\rsomed{x} f\\negthinspace x \\mathrel{:} \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$’."
         ]
     },
@@ -6880,7 +6880,7 @@
             "Das Gefühl der Welt als begrenztes Ganzes ist das mystische."
         ],
         "Ogden": [
-            "The contemplation of the world sub specie aeterni is its contemplation as a limited whole.",
+            "The contemplation of the world \\emph{sub specie aeterni} is its contemplation as a limited whole.",
             "The feeling that the world is a limited whole is the mystical feeling."
         ],
         "PearsMcGuinness": [
