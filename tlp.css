@@ -1,6 +1,8 @@
 body {
     text-align: justify;
     line-height: 1.2;
+    font-family: serif;
+    font-size: 16px;
 }
 svg {
     background-color: transparent;
@@ -33,12 +35,15 @@ em.germph {
     font-style: normal;
     font-weight: normal;
 }
+var {
+    padding-right: 2px;
+}
 #dedication {
     text-align: center;
     margin-top: 100px;
 }
 p {
-    text-indent: 2em;
+    text-indent: 1em;
     margin-top: 0ex;
     margin-bottom: 0ex;
 }
@@ -293,6 +298,9 @@ p.footnote, p.licensep {
     text-indent: 0px;
     margin-top: 1ex;
     clear: both;
+}
+#licenseinfo {
+    text-align: left;
 }
 span.kckaddition {
     color: red;

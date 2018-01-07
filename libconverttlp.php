@@ -216,11 +216,11 @@ function tex_to_html($tex, $do_big_subs = true) {
     
     // quantifiers
     $t = mb_ereg_replace('\\\rsomedd{([^{}]*)} *', '<span class="quant">(<span class="symbol">∃</span>\1):</span>', $t,"m");
-    $t = mb_ereg_replace('\\\ralldd{([^{}]*)} *', '<span class="quant">(<span class="symbol">∃</span>\1):</span>', $t,"m");   
+    $t = mb_ereg_replace('\\\ralldd{([^{}]*)} *', '<span class="quant">(\1):</span>', $t,"m");   
     $t = mb_ereg_replace('\\\rsomed{([^{}]*)} *', '<span class="quant">(<span class="symbol">∃</span>\1).</span>', $t,"m");
-    $t = mb_ereg_replace('\\\ralld{([^{}]*)} *', '<span class="quant">(<span class="symbol">∃</span>\1).</span>', $t,"m");   
+    $t = mb_ereg_replace('\\\ralld{([^{}]*)} *', '<span class="quant">(\1).</span>', $t,"m");   
     $t = mb_ereg_replace('\\\rsome{([^{}]*)} *', '<span class="quant">(<span class="symbol">∃</span>\1)</span>', $t,"m");
-    $t = mb_ereg_replace('\\\rall{([^{}]*)} *', '<span class="quant">(<span class="symbol">∃</span>\1)</span>', $t,"m");   
+    $t = mb_ereg_replace('\\\rall{([^{}]*)} *', '<span class="quant">(\1)</span>', $t,"m");   
     
     //standlone math operators get no special spacing
     $t = mb_ereg_replace('\\$\\\lor\\$','∨',$t);
