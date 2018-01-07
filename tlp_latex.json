@@ -6343,15 +6343,15 @@
     "6.241": {
         "German": [
             "So lautet der Beweis des Satzes $2 \\times 2=4$:",
-            "\\begin{center}$\\omopparen[\\nu]{\\mu} x = \\omop[\\nu \\times \\mu] x$ Def.\\\\\n$\\omop[2 \\times 2] x = \\omopparen[2]{2} x = \\omopparen[2]{1+1} x = \\omop[2]\\omop[2] x$\\\\\n$ = \\omop[1+1]\\omop[1+1] x = \\mathop{(\\Omega\\text{’}\\Omega)\\text{’}}\\mathop{(\\Omega\\text{’}\\Omega)\\text{’}} x$\\\\ $= \\omop\\omop\\omop\\omop x = \\omop[1+1+1+1] x = \\omop[4] x$.\\\\\n\\end{center}"
+            "\\begin{center}$\\omopparen[\\nu]{\\mu} x = \\omop[\\nu \\times \\mu] x$ Def.\\\\ $\\omop[2 \\times 2] x = \\omopparen[2]{2} x = \\omopparen[2]{1+1} x = \\omop[2]\\omop[2] x$\\\\ $ = \\omop[1+1]\\omop[1+1] x = \\mathop{(\\Omega\\text{’}\\Omega)\\text{’}}\\mathop{(\\Omega\\text{’}\\Omega)\\text{’}} x$\\\\ $= \\omop\\omop\\omop\\omop x = \\omop[1+1+1+1] x = \\omop[4] x$.\\\\ \\end{center}"
         ],
         "Ogden": [
             "Thus the proof of the proposition $2 \\times 2=4$ runs:",
-            "\\begin{center}$\\omopparen[\\nu]{\\mu} x = \\omop[\\nu \\times \\mu] x$ Def.\\\\\n$\\omop[2 \\times 2] x = \\omopparen[2]{2} x = \\omopparen[2]{1+1} x = \\omop[2]\\omop[2] x$\\\\\n$ = \\omop[1+1]\\omop[1+1] x = \\mathop{(\\Omega\\text{’}\\Omega)\\text{’}}\\mathop{(\\Omega\\text{’}\\Omega)\\text{’}} x$\\\\ \n$= \\omop\\omop\\omop\\omop x = \\omop[1+1+1+1] x = \\omop[4] x$.\\\\\n\\end{center}"
+            "\\begin{center}$\\omopparen[\\nu]{\\mu} x = \\omop[\\nu \\times \\mu] x$ Def.\\\\ $\\omop[2 \\times 2] x = \\omopparen[2]{2} x = \\omopparen[2]{1+1} x = \\omop[2]\\omop[2] x$\\\\ $ = \\omop[1+1]\\omop[1+1] x = \\mathop{(\\Omega\\text{’}\\Omega)\\text{’}}\\mathop{(\\Omega\\text{’}\\Omega)\\text{’}} x$\\\\ $= \\omop\\omop\\omop\\omop x = \\omop[1+1+1+1] x = \\omop[4] x$.\\\\ \\end{center}"
         ],
         "PearsMcGuinness": [
             "Thus the proof of the proposition $2 \\times 2 = 4$ runs as follows:",
-            "\\begin{center}$\\omopparen[\\nu]{\\mu} x = \\omop[\\nu \\times \\mu] x$ Def.\\\\\n$\\omop[2 \\times 2] x = \\omopparen[2]{2} x = \\omopparen[2]{1+1} x = \\omop[2]\\omop[2] x$\\\\\n$ = \\omop[1+1]\\omop[1+1] x = \\mathop{(\\Omega\\text{’}\\Omega)\\text{’}}\\mathop{(\\Omega\\text{’}\\Omega)\\text{’}} x$\\\\ $= \\omop\\omop\\omop\\omop x = \\omop[1+1+1+1] x = \\omop[4] x$.\\\\\n\\end{center}"
+            "\\begin{center}$\\omopparen[\\nu]{\\mu} x = \\omop[\\nu \\times \\mu] x$ Def.\\\\ $\\omop[2 \\times 2] x = \\omopparen[2]{2} x = \\omopparen[2]{1+1} x = \\omop[2]\\omop[2] x$\\\\ $ = \\omop[1+1]\\omop[1+1] x = \\mathop{(\\Omega\\text{’}\\Omega)\\text{’}}\\mathop{(\\Omega\\text{’}\\Omega)\\text{’}} x$\\\\ $= \\omop\\omop\\omop\\omop x = \\omop[1+1+1+1] x = \\omop[4] x$.\\\\ \\end{center}"
         ]
     },
     "6.3": {
