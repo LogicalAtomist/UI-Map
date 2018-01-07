@@ -124,7 +124,7 @@ function tex_to_html($tex, $do_big_subs = true) {
     $t = preprocess($tex);
     
     // prevent five dashes from en/emdashing; restore later
-    $t = mb_ereg_replace('-----', '⊚fivedashes⊚', $t);
+    $t = mb_ereg_replace('-----', '⊚⊚⊚⊚⊚', $t);
     
     // line breaks
     $t = mb_ereg_replace('\\s*(\\\)(\\\) *','<br />' . PHP_EOL,$t);
@@ -135,9 +135,9 @@ function tex_to_html($tex, $do_big_subs = true) {
     //ampersand
     $t = mb_ereg_replace('\\\&','&amp;',$t);
     
-    //nonbreaking spaces
-    $t = mb_ereg_replace('~','&nbsp;',$t);
-    $t = mb_ereg_replace('\\\qquad\\s*',' &nbsp; ',$t);
+    //nonbreaking spaces; fix later
+    $t = mb_ereg_replace('~','<nbsp>',$t);
+    $t = mb_ereg_replace('\\\qquad\\s*',' <nbsp> ',$t);
         
     // double quotation marks, tex style
     $t = mb_ereg_replace('``', '“', $t);
@@ -281,9 +281,10 @@ function tex_to_html($tex, $do_big_subs = true) {
     
     // restore mathrm
     $t=mb_ereg_replace('<mathrm:([^>]*)>','<span class="mathrm">\1</span>', $t);
+    $t=mb_ereg_replace('<nbsp>','&nbsp;', $t);
     
     // restore five dashes
-    $t = mb_ereg_replace('⊚fivedashes⊚', '-----', $t);
+    $t = mb_ereg_replace('⊚⊚⊚⊚⊚', '-----', $t);
     
     // handle_big_substitutions
     if ($do_big_subs) {
