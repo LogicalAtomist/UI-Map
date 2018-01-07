@@ -1,6 +1,6 @@
 body {
-   text-align: justify;
-   line-height: 1.2;
+    text-align: justify;
+    line-height: 1.2;
 }
 svg {
     background-color: transparent;
@@ -8,208 +8,158 @@ svg {
 h1 {
     text-align: center;
 }
-h4 {
-}
 h1.germantitle {
     font-style: italic;
 }
-h3.pubinfo
-{
+h3.pubinfo, h3.byline {
     text-align: center;
 }
-h3.byline
-{
+h3.byline {
     text-align: center;
 }
-.motto
-{
+.motto {
     margin-top: 12ex;
     margin-bottom: 15ex;
     text-align: center;
 }
-.dedicationtext
-{
+.dedicationtext {
     margin-top: 5ex;
     text-align: center;
     font-variant: small-caps;
 }
-em.germph
-{
+em.germph {
     letter-spacing: 0.2em;
     padding-left: 0.2em;
     font-style: normal;
     font-weight: normal;
 }
-h2.majordivision#dedication
-{
+#dedication {
     text-align: center;
     margin-top: 100px;
 }
-p
-{
+p {
     text-indent: 2em;
     margin-top: 0ex;
     margin-bottom: 0ex;
 }
-p.openingpar
-{
+p.openingpar {
     text-indent: 0em;
 }
 .flushright {
     text-indent: 0em;
     text-align: right;
 }
-table
-{
+table {
     border-collapse: collapse;
     border: none;
     margin: 0px;
     text-indent: 0em;
 }
-.textsc
-{
+.textsc {
     font-variant: small-caps;
 }
-.overlined
-{
+.overlined {
     text-decoration: overline;
 }
-.nop
-{
+.nop, .nop var {
     font-style: normal;
 }
-.quant
-{
+.quant {
     padding-right: 0.2em;
 }
-span.mathrel
-{
+.mathrel {
     padding-left: 0.25em;
     padding-right: 0.25em;
 }
-sup span.mathrel
-{
+sup .mathrel {
     padding-left: 0em;
     padding-right: 0em;
 }
-table.fnlist
-{
+.mathop {
+    padding-right: 0.15em;
+}
+table.fnlist {
     border-collapse: collapse;
     border: none;
     vertical-align: top;
     font-size: 70%;
 }
-td.righttight
-{
+td.righttight {
     padding: 0px;
     border: none;
     margin: 0px;
     text-align: right;
     vertical-align: top;
 }
-td.centertight
-{
+td.centertight {
     padding: 0px;
     border: none;
     margin: 0px;
     text-align: center;
     vertical-align: top;
 }
-td.lefttight
-{
+td.lefttight {
     padding: 0px;
     border: none;
     margin: 0px;
     text-align: left;
     vertical-align: top;
 }
-table.alignedmath tr td.righttight
-{
+table.alignedmath tr td.righttight {
     padding: 0px;
     border: none;
     margin: 0px;
     text-align: right;
     vertical-align: baseline;
 }
-table.alignedmath tr td.centertight
-{
+table.alignedmath tr td.centertight {
     padding: 0px;
     border: none;
     margin: 0px;
     text-align: center;
     vertical-align: baseline;
 }
-table.alignedmath
-{
+table.alignedmath {
     margin-left: auto;
     margin-right: auto;
     text-indent: 0pt;
 }
-table.alignedmath tr td.lefttight
-{
+table.alignedmath tr td.lefttight {
     padding: 0px;
     border: none;
     margin: 0px;
     text-align: left;
     vertical-align: baseline;
 }
-.mathop
-{
-    padding-right: 0.15em;
-}
-span.mathrm
-{
+span.mathrm, span.mathrm var {
     font-style: normal;
 }
-span.mathrm var
-{
-    font-style: normal;
-}
-ul.desc
-{
+ul.desc {
     list-style-type: none;
 }
-.wname
-{
-    text-align: right;
-    padding-right: 1.5em;
-}
-.prefacetable
-{
+.prefacetable, .bodytable {
     width: 100%;
 }
-.prefheadercell
-{
-   width: 33%;
-   padding: 10px;
-   font-weight: bold;
+.prefheadercell {
+    width: 33%;
+    padding: 10px;
+    font-weight: bold;
 }
-td.gerpref
-{
-   width: 33%;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-indent: 1em;
-   vertical-align: top;
-   background-color: LightYellow;
+td.gerpref, td.ogdpref, td.pmcpref {
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-indent: 1em;
+    vertical-align: top;    
 }
-td.ogdpref
-{
-   width: 33%;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-indent: 1em;
-   vertical-align: top;
-   background-color: AliceBlue;
+td.gerpref, td.ger {
+    background-color: LightYellow;
 }
-td.pmcpref
-{
-   width: 33%;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-indent: 1em;
-   vertical-align: top;
-   background-color: MistyRose;
+td.ogdpref, td.ogd {
+    background-color: AliceBlue;
+}
+td.pmcpref, td.pmc {
+    background-color: MistyRose;
 }
 #pref9 td {
     text-align: right;
@@ -220,216 +170,131 @@ td.pmcpref
     text-align: left;
     text-indent: 0em;
 }
-table.bodytable
-{
-   width: 100%;
-}
-th.numheader
-{
+th.numheader {
     width: 7%;
     padding: 10px;
     font-weight: bold;
 }
-th.headercell
-{
+th.headercell {
     width: 31%;
     padding: 10px;
     font-weight: bold;
 }
-td.pnum
-{
-   width: 5.5%;
-   padding-right: 10px;
-   text-indent: 0em;
-   text-align: right;
-   font-weight: bold;
-   vertical-align: top;
+td.pnum {
+    width: 5.5%;
+    padding-right: 10px;
+    text-indent: 0em;
+    text-align: right;
+    font-weight: bold;
+    vertical-align: top;
 }
-td.ger
-{
-   width: 31.5%;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-indent: 1em;
-   vertical-align: top;
-   background-color: LightYellow;
-}
-td.ogd
-{
-   width: 31.5%;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-indent: 1em;
-   vertical-align: top;
-   background-color: AliceBlue;
-}
-td.pmc
-{
-   width: 31.5%;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-indent: 1em;
-   vertical-align: top;
-   background-color: MistyRose;
-}
-td.gernoindent
-{
-   width: 31.5%;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-indent: 0em;
-   vertical-align: top;
-   background-color: LightYellow;
-}
-td.ogdnoindent
-{
-   width: 31.5%;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-indent: 0em;
-   vertical-align: top;
-   background-color: AliceBlue;
-}
-td.pmcnoindent
-{
-   width: 31.5%;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-indent: 0em;
-   vertical-align: top;
-   background-color: MistyRose;
+td.ger, td.ogd, td.pmc {
+    width: 31.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-indent: 1em;
+    vertical-align: top;
 }
 .noindent {
     text-indent: 0;
 }
-div.centered
-{
-   text-align: center;
-   margin-top: 0px;
-   margin-bottom: 0px;
+div.centered {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
-div.centeredsqueeze
-{
-   line-height: 0.7;
-   text-align: center;
-   margin-top: 0px;
-   margin-bottom: 0px;
+#indexdiv div.centered {
+    margin-top: 1ex;
+    margin-bottom: 2ex;
 }
-div.centeredspacebelow
-{
+div.centeredsqueeze {
+    line-height: 0.7;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+div.centeredspacebelow {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 1.5ex;
 }
-span.summation
-{
+span.summation {
     text-indent: 0px;
     display: inline-block; 
     text-align: center; 
     vertical-align: middle; 
     line-height: 1;
 }
-span.padrthree
-{
+span.padrthree {
     padding-right: 3em;
 }
-div.displaymath
-{
-    text-align: center;
-}
-span.smallvar
-{
+.smallvar {
     font-size: 80%;
 }
-var.smallvar
-{
-    font-size: 80%;
-}
-var.pushvar
-{
-    padding-right: 0.15em;
-}
-var.doublepushvar
-{
-    padding-right: 0.15em;
-    padding-left: 0.15em;
-}
-span.largeop
-{
+span.largeop {
     font-size: 200%;
 }
-span.largeparen
-{
+span.largeparen {
     font-size: 250%; 
     vertical-align: middle;
 }
-span.binom
-{
+span.binom {
     text-indent: 0px;
     display: inline-block; 
     text-align: center; 
     vertical-align: middle; 
     line-height: 0.9;
 }
-table.truthtable
-{
+table.truthtable {
     border-collapse: collapse;
     display:inline-block;
     vertical-align: middle;
 }
-table.truthtable th.l
-{
+table.truthtable th.l {
     border-bottom:3px double black;
     border-right:1px solid black;
     padding: 4px;
     text-align: center;
     font-weight: normal;
 }
-table.truthtable th.m
-{
+table.truthtable th.m {
     border-bottom:3px double black;
     border-right:1px solid black;
     padding: 4px;
     text-align: center;
     font-weight: normal;
 }
-table.truthtable th.e
-{
+table.truthtable th.e {
     border-bottom:3px double black;
     border-right:none;
     padding: 4px;
     text-align: center;
     font-weight: normal;
 }
-table.truthtable td.l
-{
+table.truthtable td.l {
     border-bottom:1px solid black;
     border-right:1px solid black;
     padding: 4px;
     text-align: center;
 }
-table.truthtable td.m
-{
+table.truthtable td.m {
     border-bottom:1px solid black;
     border-right:1px solid black;
     padding: 4px;
     text-align: center;
 }
-table.truthtable td.e
-{
+table.truthtable td.e {
     border-bottom:1px solid black;
     border-right:none;
     padding: 4px;
     text-align: center;
 }
-p.footnote, p.licensep
-{
+p.footnote, p.licensep {
     text-indent: 0px;
     margin-top: 1ex;
     clear: both;
 }
-span.kckaddition
-{
+span.kckaddition {
     color: red;
 }
 .indexentry {
@@ -450,96 +315,71 @@ span.kckaddition
 #indexentries {
     margin-top: 4ex;
 }
-
-div.russellsintro
-{
-    margin-left: 20%;
-    margin-right: 20%;
+span.latex {
+    letter-spacing: 1px;
 }
-div.indexdiv
-{
-    margin-left: 20%;
-    margin-right: 20%;
+span.latex sup {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    vertical-align: 0.2em;
+    margin-left: -0.36em;
+    margin-right: -0.15em;
 }
-span.latex 
-{
-  letter-spacing: 1px;
+span.latex sub {
+    text-transform: uppercase;
+    vertical-align: -0.4ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+    font-size: 1em;
 }
-span.latex sup 
-{
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 0.85em;
-  vertical-align: 0.2em;
-  margin-left: -0.36em;
-  margin-right: -0.15em;
-}
-span.latex sub 
-{
-  text-transform: uppercase;
-  vertical-align: -0.4ex;
-  margin-left: -0.1667em;
-  margin-right: -0.125em;
-  font-size: 1em;
-}
-object
-{
+object {
     background-color: transparent;
 }
 .sflabel {
     vertical-align: middle; 
     font-family: sans-serif;
 }
-.ccicon
-{
+.ccicon {
     width: 64px; 
     height: 64px;
 }
-span.ccicongroup
-{
+span.ccicongroup {
     float: left; 
     padding-right: 1em;
     vertical-align: middle;
 }
-object.thecubesvg
-{
+object.thecubesvg {
     width: 110pt; 
     height: 115pt;
     margin-left: auto;
     margin-right: auto;
 }
-img.thecubepng
-{
+img.thecubepng {
     width: 101pt; 
     height: 108pt;
     margin-left: auto;
     margin-right: auto;
 }
-span.sfmiddle
-{
+span.sfmiddle {
     vertical-align: middle; 
     font-family: sans-serif;
 }
-object.theeyesvg
-{
+object.theeyesvg {
     vertical-align: middle; 
     width: 101pt; 
     height: 58pt;
 }
-img.theeyepng
-{
+img.theeyepng {
     vertical-align: middle;
 }
-span.lowered
-{
+span.lowered {
     vertical-align: -0.5ex;
 }
-span.nudgedown
-{
+span.nudgedown {
     vertical-align: -0.2ex;
 }
-table.possibilities
-{
+table.possibilities {
     display: inline-table; 
     vertical-align: middle;
     border-collapse: collapse;
@@ -548,35 +388,29 @@ table.possibilities
     padding: 0px;
     text-indent: 0px;
 }
-td.middleright
-{
+td.middleright {
     vertical-align: middle; 
     text-align: right;
 }
-td.middlecenter
-{
+td.middlecenter {
     vertical-align: middle; 
     text-align: center;
 }
-td.middleleft
-{
+td.middleleft {
     vertical-align: middle; 
     text-align: left;
 }
-td.summationtop
-{
+td.summationtop {
     text-align: center; 
     vertical-align: bottom; 
     padding-bottom: 0px;
 }
-td.summationmiddle
-{
+td.summationmiddle {
     text-align: center; 
     padding-top: 0px; 
     padding-bottom: 0px;
 }
-td.summationbottom
-{
+td.summationbottom {
     text-align: center; 
     padding-top: 0px;
 }
