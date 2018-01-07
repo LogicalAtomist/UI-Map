@@ -63,6 +63,10 @@ table {
 .textsc {
     font-variant: small-caps;
 }
+.linkarray {
+    font-family: sans-serif;
+    font-size: 80%;
+}
 .overlined {
     text-decoration: overline;
 }

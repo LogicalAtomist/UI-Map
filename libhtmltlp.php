@@ -122,4 +122,66 @@ function columns_maintext() {
     
 }
 
+function base_anchor_for($pn) {
+    if (substr($pn, 0, 1) == 'P') {
+        return mb_ereg_replace('P','pref',$pn);
+    }
+    return 'p' . $pn;
+}
+
+function html_link_array_for($pn,$version,$makeanchor) {
+    
+}
+
+function html_version($version) {
+    
+    global $tlp;
+    
+    echo '<div id="corediv' . $version . '" class="versionbigdiv">' . PHP_EOL;
+    
+    // VERSION PREFACE
+    
+    echo '<div id="prefacediv' . $version . '" class="prefacediv">' . PHP_EOL;
+    
+    $prefname = 'Vorwort (Preface)';
+    if ($version == 'Ogden') {
+        $prefname = 'Preface (Ogden)';
+    }
+    if ($version == 'PearsMcGuinness') {
+        $prefname = 'Preface (Pears/McGuinness)';
+    }
+    echo '<h2 class="majordivision" id="preface' . $version .'">' . $prefname . '</h2>' . PHP_EOL;
+    
+    foreach($tlp as $pn => $ptext) {
+        // break when you get past preface
+        if (substr($pn, 0, 1) != 'P') {
+            break;
+        }
+        
+        // link array
+        echo '<div class="preflinks">';
+        echo html_link_array_for($pn, $version,true);
+        echo '</div>' . PHP_EOL;
+        
+        
+    }
+    
+    echo '</div>' . PHP_EOL; // end of version prefacediv
+        
+    // VERSION MAIN TEXT
+    
+    
+    echo '</div>' . PHP_EOL; // end of version corediv
+        
+    
+}
+
+function three_versions() {
+    
+    html_version('German');
+    html_version('Ogden');
+    html_version('PearsMcGuinness');
+    
+}
+
 ?>
