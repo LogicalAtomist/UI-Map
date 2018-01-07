@@ -3339,7 +3339,8 @@
     "4.442": {
         "German": [
             "Es ist z.\\,B.:",
-            "\\negpbk\\fourfourfourtwotablegerman\n\\flushright ein Satzzeichen.",
+            "\\negpbk\\fourfourfourtwotablegerman",
+            "\\flushright ein Satzzeichen.",
             "(Frege’s „Urteilsstrich“ „$\\vdash$“ ist logisch ganz bedeutunglos; er zeigt bei Frege (und Russell) nur an, dass diese Autoren die so bezeichneten Sätze für wahr halten. \n„$\\vdash$“ gehört daher ebenso wenig zum Satzgefüge, wie etwa die Nummer des Satzes. Ein Satz kann unmöglich von sich selbst aussagen, dass er wahr ist.)",
             "Ist die Reihenfolge der Wahrheitsmöglichkeiten im Schema durch eine Kombinationsregel ein für allemal festgesetzt, dann ist die letzte Kolonne allein schon ein Ausdruck der Wahrheitsbedingungen. Schreiben wir diese Kolonne als Reihe hin, so wird das Satzzeichen zu",
             "\\[ \\text{„} \\mathop{(\\mathrm{WW-W})}~ (p, q)\\text{“} \\] oder deutlicher \\[ \\text{„} \\mathop{(\\mathrm{WWFW})}~ (p, q)\\text{“}. \\]",
@@ -3347,7 +3348,8 @@
         ],
         "Ogden": [
             "Thus \\emph{e.g.}",
-            "\\negpbk\\fourfourfourtwotableogden\n\\flushright is a propositional sign.",
+            "\\negpbk\\fourfourfourtwotableogden",
+            "\\flushright is a propositional sign.",
             "(Frege’s assertion sign “$\\vdash$” is logically altogether meaningless; in Frege (and Russell) it only shows that these authors hold as true the propositions marked in this way. “$\\vdash$” belongs therefore to the propositions no more than does the number of the proposition. A proposition cannot possibly assert of itself that it is true.)",
             "If the sequence of the truth-possibilities in the schema is once for all determined by a rule of combination, then the last column is by itself an expression of the truth-conditions. If we write this column as a row the propositional sign becomes:",
             "\\[ “\\mathop{(\\mathrm{TT-T})}~ (p, q)\\text{”}, \\] or more plainly: \\[“\\mathop{(\\mathrm{TTFT})}~ (p, q)\\text{”.}\\]",
@@ -3356,6 +3358,7 @@
         "PearsMcGuinness": [
             "For example, the following is a propositional sign:",
             "\\negpbk\\fourfourfourtwotablepmc",
+            "",
             "(Frege’s ‘judgement stroke’ ‘$\\vdash$’ is logically quite meaningless: in the works of Frege (and Russell) it simply indicates that these authors hold the propositions marked with this sign to be true. Thus ‘$\\vdash$’ is no more a component part of a proposition than is, for instance, the proposition’s number. It is quite impossible for a proposition to state that it itself is true.)",
             "If the order or the truth-possibilities in a schema is fixed once and for all by a combinatory rule, then the last column by itself will be an expression of the truth-conditions. If we now write this column as a row, the propositional sign will become",
             "\\[ “\\mathop{(\\mathrm{TT-T})}~ (p, q)\\text{”}, \\] or more explicitly \\[“\\mathop{(\\mathrm{TTFT})}~ (p, q)\\text{”.}\\]",
@@ -5203,21 +5206,21 @@
         "German": [
             "Einen Komplex wahrnehmen heißt wahrnehmen, dass sich seine Bestandteile so und so zu einander verhalten.",
             "Dies erklärt wohl auch, dass man die Figur ",
-            "\\thecube",
+            "\\negpbk\\thecube",
             "\\negpbk auf zweierlei Art als Würfel sehen kann; und alle ähnlichen Erscheinungen. Denn wir sehen eben wirklich zwei verschiedene Tatsachen.",
             "(Sehe ich erst auf die Ecken $a$ und nur flüchtig auf $b$, so erscheint $a$ vorne; und umgekehrt.)"
         ],
         "Ogden": [
             "To perceive a complex means to perceive that its constituents are combined in such and such a way.",
             "This perhaps explains that the figure ",
-            "\\thecube",
+            "\\negpbk\\thecube",
             "\\negpbk can be seen in two ways as a cube; and all similar phenomena. For we really see two different facts.",
             "(If I fix my eyes first on the corners $a$ and only glance at $b$, $a$ appears in front and $b$ behind, and vice versa.)"
         ],
         "PearsMcGuinness": [
             "To perceive a complex means to perceive that its constituents are related to one another in such and such a way.",
             "This no doubt also explains why there are two possible ways of seeing the figure ",
-            "\\thecube",
+            "\\negpbk\\thecube",
             "\\negpbk as a cube; and all similar phenomena. For we really see two different facts.",
             "(If I look in the first place at the corners marked $a$ and only glance at the $b$’s, then the $a$’s appear to be in front, and \\emph{vice versa})."
         ]
@@ -5543,13 +5546,16 @@
     },
     "5.6331": {
         "German": [
-            "Das Gesichtsfeld hat nämlich nicht etwa eine solche Form:\n\\theeye"
+            "Das Gesichtsfeld hat nämlich nicht etwa eine solche Form:",
+            "\\negpbk\\theauge"
         ],
         "Ogden": [
-            "For the field of sight has not a form like this: \\renewcommand{\\eyename}{\\textsf{Eye}}\\theeye"
+            "For the field of sight has not a form like this:",
+            "\\negpbk\\theeye"
         ],
         "PearsMcGuinness": [
-            "For the form of the visual field is surely not like this \\renewcommand{\\eyename}{\\textsf{Eye}}\\theeye"
+            "For the form of the visual field is surely not like this",
+            "\\negpbk\\theeye"
         ]
     },
     "5.634": {

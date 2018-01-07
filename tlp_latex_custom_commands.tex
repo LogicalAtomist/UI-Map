@@ -82,9 +82,11 @@
 \newcommand{\eyename}{\textsf{Auge}}
 %
 % The eye from 5.6331
-\newcommand{\theeye}{\begin{center}
+\newcommand{\theeye}{\eyediagram{Eye}}
+\newcommand{\theauge}{\eyediagram{Auge}}
+\newcommand{\eyediagram}[1]{\begin{center}
   \begin{tikzpicture}
-      \path node (eye) at (0,0) [shape=circle,draw,thick,inner sep=0.05cm,label={[label distance=-3pt]left:{\eyename \thinspace---}}] {};
+      \path node (eye) at (0,0) [shape=circle,draw,thick,inner sep=0.05cm,label={[label distance=-3pt]left:{\textsf{#1} \thinspace---}}] {};
       \draw [thick] (-.04,0.06) arc (140:90:3cm) arc (90:-90:1cm) arc (-90:-129:3.64cm);%   
   \end{tikzpicture}   
 \end{center}}
