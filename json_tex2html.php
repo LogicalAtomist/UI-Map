@@ -1,6 +1,6 @@
 <?php
 
-require 'libhtmltlp.php';
+require 'libconverttlp.php';
 
 $tex_json_filename = dirname(__FILE__) . '/tlp_latex.json';
 if (isset($argv[1])) {

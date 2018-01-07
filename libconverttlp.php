@@ -1,19 +1,5 @@
 <?php
 
-date_default_timezone_set('America/New_York');
-
-function get_version_num() {
-    $cmd = 'cd "' . dirname(__FILE__) . '" && git tag | tail -n 1';
-    $vnum = trim(shell_exec($cmd));
-    if (substr($vnum, 0, 1) != 'v') {
-        $vnum = '[unknown]';
-    } else {
-        $vnum = substr($vnum,1);
-    }
-    return $vnum;
-}
-
-
 function remove_tex_comments($tex) {
     $lines = explode(PHP_EOL, $tex);
     $r_array = array();
@@ -318,10 +304,18 @@ function tex_to_html($tex, $do_big_subs = true) {
     return $t;
 }
 
+function html_russells_intro() {
+    
+    $intro_tex = file_get_contents(dirname(__FILE__) . '/tlp_russells_intro.tex') ?? '[Could not read Russell’s intro file.]';
+    
+    $intro_html = tex_to_html($intro_tex,false);
+    
+    return '<p class="openingpar">' . mb_substr($intro_html, 3);
+}
+
 function exit_with_error($s) {
     fwrite(STDERR, $s . PHP_EOL);
     exit(1); 
 }
-
 
 ?>

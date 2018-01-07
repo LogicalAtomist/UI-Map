@@ -1,13 +1,13 @@
 <?php
 
 require 'libhtmltlp.php';
+require 'libconverttlp.php';
 
 $tlp = json_decode(file_get_contents(dirname(__FILE__) . '/tlp_html.json'));
 
 if (!(isset($tlp->{'P1'}))) {
     exit_with_error('Could not parse HTML-based json file.');
 }
-
 
 ?>
 <!DOCTYPE html>
@@ -33,6 +33,14 @@ if (!(isset($tlp->{'P1'}))) {
         <!-- web icon -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <title>Tractatus Logico-Philosophicus | Side-by-side-by-side edition</title>
+        
+        <!-- css -->
+        <style type="text/css">
+            <?php readfile(dirname(__FILE__) . '/tlp.css'); ?>
+            
+            
+        </style>
+        
     </head>
     <body>
         <h1 class="englishtitle">Tractatus Logico-Philosophicus</h1>
@@ -53,6 +61,9 @@ if (!(isset($tlp->{'P1'}))) {
         <div class="russellsintro">
             <h2 class="majordivision" id="intro">Introduction</h2>
             <h3 class="bylinebr">By Bertrand Russell, F.R.S.</h3>
+            
+            <?php echo html_russells_intro(); ?>
+            
         </div>
     </body>
 </html>
