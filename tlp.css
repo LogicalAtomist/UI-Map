@@ -433,21 +433,25 @@ span.kckaddition
 {
     color: red;
 }
-p.indexentry
-{
+.indexentry {
     padding-left: 3em;
     text-indent: -3em;
 }
-p.indexsubentry
-{
+.indexsubentry {
     padding-left: 4.5em;
     text-indent: -3em;
 }
-p.indexsubsubentry
-{
+.indexsubsubentry {
     padding-left: 6em;
     text-indent: -3em;
 }
+.indexletterblock {
+    margin-top: 3ex;
+}
+#indexentries {
+    margin-top: 4ex;
+}
+
 div.russellsintro
 {
     margin-left: 20%;

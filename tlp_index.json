@@ -185,7 +185,7 @@
     {
         "isSubEntry": true,
         "isSubSubEntry": false,
-        "entryname": "2. [Übereinstimmmung]",
+        "entryname": "2. [\\textit{Übereinstimmmung}]",
         "refs": [
             {
                 "target": "2.21"
@@ -529,7 +529,7 @@
     {
         "isSubEntry": true,
         "isSubSubEntry": false,
-        "entryname": "1. [behaupten]",
+        "entryname": "1. [\\textit{behaupten}]",
         "refs": [
             {
                 "target": "4.122"
@@ -545,7 +545,7 @@
     {
         "isSubEntry": true,
         "isSubSubEntry": false,
-        "entryname": "2. [zusprechen]",
+        "entryname": "2. [\textit{zusprechen}]",
         "refs": [
             {
                 "target": "4.124"
@@ -3115,7 +3115,7 @@
     {
         "isSubEntry": false,
         "isSubSubEntry": false,
-        "entryname": "fact [Tatsache]",
+        "entryname": "fact [\\textit{Tatsache}]",
         "refs": [
             {
                 "target": "1.1–1.2"
@@ -8550,12 +8550,7 @@
     {
         "isSubEntry": true,
         "isSubSubEntry": false,
-        "entryname": "5. [\\textit{sich von selbst verstehen}: obvious; understand], $\\sim$ing,"
-    },
-    {
-        "isSubEntry": true,
-        "isSubSubEntry": true,
-        "entryname": "go without",
+        "entryname": "5. [\\textit{sich von selbst verstehen}: obvious; understand], $\\sim$ing, go without",
         "refs": [
             {
                 "target": "3.334"
@@ -10035,7 +10030,7 @@
     {
         "isSubEntry": false,
         "isSubSubEntry": false,
-        "entryname": "sum-total [gesamt: totality; whole]",
+        "entryname": "sum-total [\\textit{gesamt}: totality; whole]",
         "refs": [
             {
                 "target": "2.063"

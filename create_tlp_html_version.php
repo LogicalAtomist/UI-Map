@@ -1,7 +1,6 @@
 <?php
 
 require 'libhtmltlp.php';
-require 'libconverttlp.php';
 
 $tlp = json_decode(file_get_contents(dirname(__FILE__) . '/tlp_html.json'));
 
@@ -115,10 +114,17 @@ if (mb_ereg_match('.*nocolumns',$settings_str)) {
            <h4>Footnotes</h4>
                 <p class="footnote" id="fn1"><a href="#fn1marker">*</a> <span id="germanfootnote1"><span class="kckaddition">[German]</span> Die Decimalzahlen als Nummern der einzelnen Sätze deuten das logische Gewicht der Sätze an, den Nachdruck, der auf ihnen in meiner Darstellung liegt. Die Sätze <var>n</var>.1, <var>n</var>.2, <var>n</var>.3, etc., sind Bemerkungen zum Sätze No. <var>n</var>; die Sätze <var>n</var>.<var>m</var>1, <var>n</var>.<var>m</var>2, etc. Bemerkungen zum Satze No. <var>n</var>.<var>m</var>; und so weiter. </span><span id="fn1sep1">/ </span><span id="ogdenfootnote1"><span class="kckaddition">[Ogden]</span> The decimal figures as numbers of the separate propositions indicate the logical importance of the propositions, the emphasis laid upon them in my exposition. The propositions <var>n</var>.1, <var>n</var>.2, <var>n</var>.3, etc., are comments on proposition No. <var>n</var>; the propositions <var>n</var>.<var>m</var>1, <var>n</var>.<var>m</var>2, etc., are comments on the proposition No. <var>n</var>.<var>m</var>; and so on. </span><span id="fn1sep2">/ </span><span id="pmcfootnote1"><span class="kckaddition">[Pears &amp; McGuinness]</span> The decimal numbers assigned to the individual propositions indicate the logical importance of the propositions, the stress laid on them in my exposition. The propositions <var>n</var>.1, <var>n</var>.2, <var>n</var>.3, etc. are comments on proposition no. <var>n</var>; the propositions <var>n</var>.<var>m</var>1, <var>n</var>.<var>m</var>2, etc. are comments on proposition no. <var>n</var>.<var>m</var>; and so on.</span></p>
             <p class="footnote" id="fn2"><a href="#fn2marker">†</a> <span class="kckaddition">[Ogden only]</span> <em>I.e.</em> not the form of one particular law, but of any law of a certain sort (B.&thinsp;R.).</p> 
+            <hr />
         </div>
-        <div id="theindex">
+        <div id="indexdiv" class="indexdiv">
+            <h2 class="majordivision" id="index">Index (Pears/McGuinness)</h2>
+            <?php
             
+            echo html_index_note();
             
+            echo html_index();
+            
+            ?>
             
         </div>
         <div id="licenseinfo">

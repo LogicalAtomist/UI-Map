@@ -314,6 +314,101 @@ function html_russells_intro() {
     return '<p class="openingpar">' . mb_substr($intro_html, 3);
 }
 
+function html_index_note() {
+    
+    $note_tex = file_get_contents(dirname(__FILE__) . '/index_note.tex') ?? '[Could not read index note file.]';
+    
+    $note_html = tex_to_html($note_tex,false);
+    
+    return $note_html;
+}
+
+function html_index_link_for($t) {
+    $anchor = $t;
+    if (substr($anchor, 0, 1) == 'P') {
+        $anchor = str_replace('P','#pref',$anchor);
+    } else {
+        $anchor = '#p' . $anchor;
+    }
+    $l = '<a href="' . $anchor . '">' . $t . '</a>';
+    return $l;
+}
+
+function html_index() {
+    
+    $entries = json_decode(file_get_contents(dirname(__FILE__) . '/tlp_index.json')) ?? 'ERROR';
+    
+    if ($entries==='ERROR') {
+        return('ERROR: Could not read index JSON file.');
+    }
+    
+    $r='<div id="indexentries">' . PHP_EOL;
+    
+    $start_letter = 'a';
+    
+    $r.='<div class="indexletterblock">' . PHP_EOL;
+    
+    foreach($entries as $e) {
+        // check if new first letter
+        if (!($e->isSubEntry)) {
+            if ( substr($e->entryname, 0, 8) == '\\textit{' ) {
+                $this_first_letter = strtolower( substr($e->entryname, 8, 1) );
+            } else {
+                $this_first_letter = strtolower( substr($e->entryname, 0, 1) );
+            }
+            if ($this_first_letter != $start_letter) {
+                $start_letter = $this_first_letter;
+                $r .= '</div>' . PHP_EOL . PHP_EOL;
+                $r .= '<div class="indexletterblock">' . PHP_EOL;
+            }
+        }
+        
+        // type of entry
+        if ($e->isSubSubEntry) {
+            $r .= '        <div class="indexsubsubentry">';
+        } else {
+            if ($e->isSubEntry) {
+                $r .= '    <div class="indexsubentry">';
+            } else {
+                $r .= '<div class="indexentry">';
+            }
+        }
+
+        $r .= tex_to_html($e->entryname,false);
+        if ((isset($e->cf)) || (isset($e->refs))) {
+            $r .= ', ';
+        }
+        if (isset($e->cf)) {
+            $r .= 'cf. ' . tex_to_html($e->cf,false) . '.';
+        }
+
+        if (isset($e->refs)) {
+            for ($i=0; $i<count($e->refs); $i++) {
+                $ref = $e->refs[$i];
+                $r .= html_index_link_for($ref->target);
+                if (isset($ref->aftertext)) {
+                    if (!(substr($ref->aftertext, 0, 1) == ';')) {
+                        $r .= ' ';
+                    }
+                    $r .= tex_to_html($ref->aftertext, false) . ' ';
+                } else {
+                    if (($i+1) != count($e->refs)) {
+                        $r .= ', ';
+                    }
+                }
+            }
+        }
+        
+        $r .= '</div>' . PHP_EOL; // end of entry
+        
+    }
+    $r .= '</div>' . PHP_EOL . PHP_EOL; // end of last letter block
+    
+    
+    $r.='</div>' . PHP_EOL; // end of indexentries block
+    return $r;
+}
+
 function exit_with_error($s) {
     fwrite(STDERR, $s . PHP_EOL);
     exit(1); 
