@@ -89,13 +89,13 @@
     },
     "P9": {
         "German": [
-            "\\phantom{a} \\hfill L.\\ W.\\\\ \\textit{Wien, 1918}"
+            "~ \\hfill L.\\ W.\\\\ \\textit{Wien, 1918}"
         ],
         "Ogden": [
-            "\\phantom{a} \\hfill L.\\ W.\\\\ \\textit{Vienna, 1918}"
+            "~ \\hfill L.\\ W.\\\\ \\textit{Vienna, 1918}"
         ],
         "PearsMcGuinness": [
-            "\\phantom{a} \\hfill L.\\ W.\\\\ \\textit{Vienna, 1918}"
+            "~ \\hfill L.\\ W.\\\\ \\textit{Vienna, 1918}"
         ]
     },
     "1": {
@@ -5057,15 +5057,15 @@
     "5.5321": {
         "German": [
             "Statt „$\\ralldd{x} f\\negthinspace x \\rimplies x=a$“ schreiben wir also z.\\,B.\\ „$\\rsomed{x} f\\negthinspace x \\drimpliesd f\\negthinspace a \\mathrel{:} \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$“.",
-            "Und der Satz: „\\germph{nur} Ein $x$ befriedigt $f(\\phantom{i})$“ lautet: „$\\rsomed{x} f\\negthinspace x \\mathrel{:} \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$“."
+            "Und der Satz: „\\germph{nur} Ein $x$ befriedigt $f(~)$“ lautet: „$\\rsomed{x} f\\negthinspace x \\mathrel{:} \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$“."
         ],
         "Ogden": [
             "Instead of “$\\ralldd{x} f\\negthinspace x \\rimplies x=a$” we therefore write \\emph{e.g.}\\ “$\\rsomed{x} f\\negthinspace x \\drimpliesd f\\negthinspace a \\mathrel{:} \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$”.",
-            "And if the proposition “\\emph{only} one $x$ satisfies $f(\\phantom{i})$” reads: “$\\rsomed{x} f\\negthinspace x \\mathrel{:} \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$”."
+            "And if the proposition “\\emph{only} one $x$ satisfies $f(~)$” reads: “$\\rsomed{x} f\\negthinspace x \\mathrel{:} \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$”."
         ],
         "PearsMcGuinness": [
             "Thus, for example, instead of ‘$\\ralldd{x} f\\negthinspace x \\rimplies x=a$’ we write ‘$\\rsomed{x} f\\negthinspace x \\drimpliesd f\\negthinspace a \\mathrel{:}  \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$’.",
-            "And the proposition, ‘\\emph{Only one} $x$ satisfies $f(\\phantom{i})$’, will read ‘$\\rsomed{x} f\\negthinspace x \\mathrel{:} \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$’."
+            "And the proposition, ‘\\emph{Only one} $x$ satisfies $f(~)$’, will read ‘$\\rsomed{x} f\\negthinspace x \\mathrel{:} \\rnot \\rsomed{x,y} f\\negthinspace x \\rand f\\negthinspace y$’."
         ]
     },
     "5.533": {
@@ -5202,19 +5202,22 @@
     "5.5423": {
         "German": [
             "Einen Komplex wahrnehmen heißt wahrnehmen, dass sich seine Bestandteile so und so zu einander verhalten.",
-            "Dies erklärt wohl auch, dass man die Figur\n\\vspace*{-8pt}\\thecube",
+            "Dies erklärt wohl auch, dass man die Figur ",
+            "\\thecube",
             "\\negpbk auf zweierlei Art als Würfel sehen kann; und alle ähnlichen Erscheinungen. Denn wir sehen eben wirklich zwei verschiedene Tatsachen.",
             "(Sehe ich erst auf die Ecken $a$ und nur flüchtig auf $b$, so erscheint $a$ vorne; und umgekehrt.)"
         ],
         "Ogden": [
             "To perceive a complex means to perceive that its constituents are combined in such and such a way.",
-            "This perhaps explains that the figure \\phantom{longwordhere}\n\\vspace*{-8pt}\\thecube",
+            "This perhaps explains that the figure ",
+            "\\thecube",
             "\\negpbk can be seen in two ways as a cube; and all similar phenomena. For we really see two different facts.",
             "(If I fix my eyes first on the corners $a$ and only glance at $b$, $a$ appears in front and $b$ behind, and vice versa.)"
         ],
         "PearsMcGuinness": [
             "To perceive a complex means to perceive that its constituents are related to one another in such and such a way.",
-            "This no doubt also explains why there are two possible ways of seeing the figure\n\\vspace*{-8pt}\\thecube",
+            "This no doubt also explains why there are two possible ways of seeing the figure ",
+            "\\thecube",
             "\\negpbk as a cube; and all similar phenomena. For we really see two different facts.",
             "(If I look in the first place at the corners marked $a$ and only glance at the $b$’s, then the $a$’s appear to be in front, and \\emph{vice versa})."
         ]
@@ -6547,7 +6550,7 @@
             "Den rechten Handschuh könnte man an die linke Hand ziehen, wenn man ihn im vierdimensionalen Raum umdrehen könnte."
         ],
         "Ogden": [
-            "The Kantian problem of the right and left hand which cannot be made to cover one another already exists in the plane, and even in one-dimensional space; where the two congruent figures $a$ and $b$ cannot be made to cover one another without \\phantom{xxxxxxxxx}",
+            "The Kantian problem of the right and left hand which cannot be made to cover one another already exists in the plane, and even in one-dimensional space; where the two congruent figures $a$ and $b$ cannot be made to cover one another without ",
             "\\negpbk\\theline",
             "\\negpbk moving them out of this space. The right and left hand are in fact completely congruent. And the fact that they cannot be made to cover one another has nothing to do with it.",
             "A right-hand glove could be put on a left hand if it could be turned round in four-dimensional space."
