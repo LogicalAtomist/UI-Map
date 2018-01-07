@@ -3343,7 +3343,9 @@
             "\\flushright ein Satzzeichen.",
             "(Frege’s „Urteilsstrich“ „$\\vdash$“ ist logisch ganz bedeutunglos; er zeigt bei Frege (und Russell) nur an, dass diese Autoren die so bezeichneten Sätze für wahr halten. \n„$\\vdash$“ gehört daher ebenso wenig zum Satzgefüge, wie etwa die Nummer des Satzes. Ein Satz kann unmöglich von sich selbst aussagen, dass er wahr ist.)",
             "Ist die Reihenfolge der Wahrheitsmöglichkeiten im Schema durch eine Kombinationsregel ein für allemal festgesetzt, dann ist die letzte Kolonne allein schon ein Ausdruck der Wahrheitsbedingungen. Schreiben wir diese Kolonne als Reihe hin, so wird das Satzzeichen zu",
-            "\\[ \\text{„} \\mathop{(\\mathrm{WW-W})}~ (p, q)\\text{“} \\] oder deutlicher \\[ \\text{„} \\mathop{(\\mathrm{WWFW})}~ (p, q)\\text{“}. \\]",
+            "\\[ \\text{„} \\mathop{(\\mathrm{WW-W})}~ (p, q)\\text{“} \\]",
+            "\\negpbk oder deutlicher",
+            "\\[ \\text{„} \\mathop{(\\mathrm{WWFW})}~ (p, q)\\text{“}. \\]",
             "(Die Anzahl der Stellen in der linken Klammer ist durch die Anzahl der Glieder in der rechten bestimmt.)"
         ],
         "Ogden": [
@@ -3352,7 +3354,9 @@
             "\\flushright is a propositional sign.",
             "(Frege’s assertion sign “$\\vdash$” is logically altogether meaningless; in Frege (and Russell) it only shows that these authors hold as true the propositions marked in this way. “$\\vdash$” belongs therefore to the propositions no more than does the number of the proposition. A proposition cannot possibly assert of itself that it is true.)",
             "If the sequence of the truth-possibilities in the schema is once for all determined by a rule of combination, then the last column is by itself an expression of the truth-conditions. If we write this column as a row the propositional sign becomes:",
-            "\\[ “\\mathop{(\\mathrm{TT-T})}~ (p, q)\\text{”}, \\] or more plainly: \\[“\\mathop{(\\mathrm{TTFT})}~ (p, q)\\text{”.}\\]",
+            "\\[ “\\mathop{(\\mathrm{TT-T})}~ (p, q)\\text{”}, \\]",
+            "\\negpbk or more plainly:",
+            "\\[“\\mathop{(\\mathrm{TTFT})}~ (p, q)\\text{”.}\\]",
             "(The number of places in the left-hand bracket is determined by the number of terms in the right-hand bracket.)"
         ],
         "PearsMcGuinness": [
@@ -3361,7 +3365,9 @@
             "",
             "(Frege’s ‘judgement stroke’ ‘$\\vdash$’ is logically quite meaningless: in the works of Frege (and Russell) it simply indicates that these authors hold the propositions marked with this sign to be true. Thus ‘$\\vdash$’ is no more a component part of a proposition than is, for instance, the proposition’s number. It is quite impossible for a proposition to state that it itself is true.)",
             "If the order or the truth-possibilities in a schema is fixed once and for all by a combinatory rule, then the last column by itself will be an expression of the truth-conditions. If we now write this column as a row, the propositional sign will become",
-            "\\[ “\\mathop{(\\mathrm{TT-T})}~ (p, q)\\text{”}, \\] or more explicitly \\[“\\mathop{(\\mathrm{TTFT})}~ (p, q)\\text{”.}\\]",
+            "\\[ “\\mathop{(\\mathrm{TT-T})}~ (p, q)\\text{”}, \\]",
+            "\\negpbk or more explicitly",
+            "\\[“\\mathop{(\\mathrm{TTFT})}~ (p, q)\\text{”.}\\]",
             "(The number of places in the left-hand pair of brackets is determined by the number of terms in the right-hand pair.)"
         ]
     },

@@ -44,7 +44,7 @@ if (mb_ereg_match('.*nocolumns',$settings_str)) {
         <title>Tractatus Logico-Philosophicus | Side-by-side-by-side edition</title>
         
         <!-- css -->
-        <style type="text/css">
+        <style>
             <?php readfile(dirname(__FILE__) . '/tlp.css'); ?>
             
             
@@ -73,7 +73,7 @@ if (mb_ereg_match('.*nocolumns',$settings_str)) {
         <hr />
         <div class="russellsintro">
             <h2 class="majordivision" id="intro">Introduction</h2>
-            <h3 class="bylinebr">By Bertrand Russell, F.R.S.</h3>
+            <h3 class="bylinebr">By Bertrand Russell, F.&thinsp;R.&thinsp;S.</h3>
             
             <?php echo html_russells_intro(); ?>
             
@@ -131,9 +131,8 @@ if (mb_ereg_match('.*nocolumns',$settings_str)) {
             <hr />
             <p class="licensep">
                 <span class="ccicongroup"><object data="images/pd.svg" type="image/svg+xml" class="ccicon"><img src="images/pd.png" alt="[PD]" class="ccicon" /></object></span> <span class="sflabel">Ludwig Wittgenstein’s <i>Tractatus Logico-Philosophicus</i> is in the Public Domain.</span></p>
-            <br clear="all"/>
             <p class="licensep"><span class="ccicongroup"><object data="images/cc.svg" type="image/svg+xml" class="ccicon"><img src="images/cc.png" alt="[CC]" class="ccicon" /></object> <object data="images/by.svg" type="image/svg+xml" class="ccicon"><img src="images/by.png" alt="[BY]" class="ccicon" /></object> <object data="images/sa.svg" type="image/svg+xml" class="ccicon"><img src="images/sa.png" alt="[SA]" class="ccicon" /></object></span> <span class="sflabel">The layout of the side-by-side-by-side edition, including HTML mark-up and related content, by Kevin C. Klement, is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Attribution—Share Alike 3.0 United States License</a>.</span></p>
-            <p class="licensep">Latest version available at the project page: <a href="http://people.umass.edu/klement/tlp/">http://people.umass.edu/klement/tlp/</a></p>
+            <p class="licensep sflabel">Latest version available at the project page: <a href="http://people.umass.edu/klement/tlp/">http://people.umass.edu/klement/tlp/</a></p>
         </div>
     </body>
 </html>
