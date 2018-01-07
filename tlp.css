@@ -212,6 +212,15 @@ td.pmcpref
    vertical-align: top;
    background-color: MistyRose;
 }
+#pref9 td {
+    text-align: right;
+    padding-right: 0.5em;
+}
+#pref9 td em {
+    display: block;
+    text-align: left;
+    text-indent: 0em;
+}
 table.bodytable
 {
    width: 100%;
@@ -411,7 +420,7 @@ table.truthtable td.e
     padding: 4px;
     text-align: center;
 }
-p.footnote
+p.footnote, p.licensep
 {
     text-indent: 0px;
     margin-top: 1ex;
