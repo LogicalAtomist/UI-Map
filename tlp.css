@@ -42,18 +42,18 @@ var {
     text-align: center;
     margin-top: 100px;
 }
-p {
+p, div.para {
     text-indent: 1em;
     margin-top: 0ex;
     margin-bottom: 0ex;
 }
-p.openingpar {
+.openingpar {
     text-indent: 0em;
 }
 .corelinks, .preflinks {
     margin-top: 1ex;
 }
-.flushright {
+.flushright, .para.flushright {
     text-indent: 0em;
     text-align: right;
 }
@@ -210,7 +210,7 @@ td.ger, td.ogd, td.pmc {
     text-indent: 1em;
     vertical-align: top;
 }
-.noindent {
+.noindent, .para.noindent {
     text-indent: 0;
 }
 div.centered {
@@ -309,7 +309,7 @@ p.footnote, p.licensep {
     margin-top: 1ex;
     clear: both;
 }
-#licenseinfo {
+#licenseinfo, #indexdiv {
     text-align: left;
 }
 span.kckaddition {

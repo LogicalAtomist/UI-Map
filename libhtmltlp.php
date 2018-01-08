@@ -273,16 +273,16 @@ function html_version($version) {
         echo '</div>' . PHP_EOL;
         // paragraph loop
         foreach($ptext->{$version} as $thispar) {
-            echo '<p';
+            echo '<div class="para';
             if (mb_ereg_match('.*-- noindent --',$thispar)) {
-                echo ' class="noindent"';
+                echo ' noindent';
             }
             if (mb_ereg_match('.*-- flushright --',$thispar)) {
-                echo ' class="flushright"';
+                echo ' flushright';
             }
-            echo '>';
+            echo '">';
             echo $thispar;
-            echo '</p>' . PHP_EOL;
+            echo '</div>' . PHP_EOL;
         }
         
     }
