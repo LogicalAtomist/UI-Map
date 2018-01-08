@@ -50,9 +50,15 @@ p {
 p.openingpar {
     text-indent: 0em;
 }
+.corelinks, .preflinks {
+    margin-top: 1ex;
+}
 .flushright {
     text-indent: 0em;
     text-align: right;
+}
+.versionbigdiv {
+    margin-bottom: 4ex;
 }
 table {
     border-collapse: collapse;
@@ -65,7 +71,7 @@ table {
 }
 .linkarray {
     font-family: sans-serif;
-    font-size: 80%;
+    font-size: 60%;
 }
 .overlined {
     text-decoration: overline;
@@ -170,11 +176,11 @@ td.ogdpref, td.ogd {
 td.pmcpref, td.pmc {
     background-color: MistyRose;
 }
-#pref9 td {
+#pref9 td, .prefacediv p:last-child {
     text-align: right;
     padding-right: 0.5em;
 }
-#pref9 td em {
+#pref9 td em, .prefacediv p:last-child em {
     display: block;
     text-align: left;
     text-indent: 0em;

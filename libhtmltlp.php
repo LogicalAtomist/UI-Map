@@ -129,15 +129,66 @@ function base_anchor_for($pn) {
     return 'p' . $pn;
 }
 
+function version_abbreviation($version,$useslash) {
+    if ($version == "German") {
+        return "GER";
+    }
+    if ($version == "Ogden") {
+        return "OGD";
+    }
+    if ($useslash) {
+        return "P/M";
+    }
+    return 'PM';
+}
+
 function html_link_array_for($pn,$version,$makeanchor) {
-    
+    $r = '';
+    $ba = base_anchor_for($pn);
+    $s_abbr = version_abbreviation($version,true);
+    $ns_abbr = version_abbreviation($version,false);
+    $r .= '<span class="linkarray"';
+    if ($makeanchor) {
+        $r .= ' id="' . $ba . $ns_abbr .'"';
+    }
+    $r .= '>';
+    if ($version != 'index') {
+        $r .= $s_abbr . ' ';
+    }
+    $r .= '[→';
+    $numdone = 0;
+    if ($version != "German") {
+        $r .= '<a class="gerlink" href="#' . $ba . version_abbreviation('German',false) . '">' . version_abbreviation('German',true) . '</a>';
+        $numdone++;
+    }
+    if ($version != "Ogden") {
+        if ($numdone > 0) {
+            $r .= '<span class="aftergerlink"> | </span>';
+        }
+        $r .= '<a class="ogdlink" href="#' . $ba . version_abbreviation('Ogden',false) . '">' . version_abbreviation('Ogden',true) . '</a>';
+        $numdone++;
+    }
+    if ($version != "PearsMcGuinness") {
+        if ($numdone > 0) {
+            $r .= '<span class="beforepmclink"> | </span>';
+        }
+        $r .= '<a class="pmclink" href="#' . $ba . version_abbreviation('PearsMcGuinness',false) . '">' . version_abbreviation('PearsMcGuinness',true) . '</a>';
+        $numdone++;
+    }
+    $r .= ']</span>';
+    return $r;
 }
 
 function html_version($version) {
     
     global $tlp;
+    if ($version=="Ogden") {
+        $tlp->{'6.32'}->Ogden[0] = mb_ereg_replace('\*','<a href="#fn2" id="fn2marker">†</a>',$tlp->{'6.32'}->Ogden[0]);
+    }
     
     echo '<div id="corediv' . $version . '" class="versionbigdiv">' . PHP_EOL;
+    
+    echo '<hr />' . PHP_EOL;
     
     // VERSION PREFACE
     
@@ -159,10 +210,12 @@ function html_version($version) {
         }
         
         // link array
-        echo '<div class="preflinks">';
-        echo html_link_array_for($pn, $version,true);
-        echo '</div>' . PHP_EOL;
-        
+        if ($pn != 'P9') {
+            echo '<div class="preflinks">';
+            echo html_link_array_for($pn, $version,true);
+            echo '</div>' . PHP_EOL;
+        }
+        echo '<p>' . $ptext->{$version}[0] . '</p>' . PHP_EOL;
         
     }
     
@@ -170,6 +223,43 @@ function html_version($version) {
         
     // VERSION MAIN TEXT
     
+    $booktitle = 'Logisch-philosophische Abhandlung (German text)';
+    if ($version == 'Ogden') {
+        $booktitle = 'Tractatus Logico-Philosophicus (Ogden translation)';
+    }
+    if ($version == 'PearsMcGuinness') {
+        $booktitle = 'Tractatus Logico-Philosophicus (Pears/McGuinness translation)';
+    }
+    echo PHP_EOL . '<h2 class="majordivision" id="bodytext' . $version . '">' . $booktitle . '</h2>' . PHP_EOL;
+    
+    // main loop
+    foreach($tlp as $pn => $ptext) {
+        if (substr($pn,0,1) == 'P') {
+            continue;
+        }
+        echo '<div class="corelinks">';
+        echo '<strong>' . $pn . '</strong>';
+        if ($pn == "1") {
+            $abbrev = version_abbreviation($version, false);
+            echo '<a href="#fn1' . $abbrev . '" id="fn1marker' . $abbrev . '">*</a>';    
+        }
+        echo ' ' . html_link_array_for($pn, $version,true);
+        echo '</div>' . PHP_EOL;
+        // paragraph loop
+        foreach($ptext->{$version} as $thispar) {
+            echo '<p';
+            if (mb_ereg_match('.*-- noindent --',$thispar)) {
+                echo ' class="noindent"';
+            }
+            if (mb_ereg_match('.*-- flushright --',$thispar)) {
+                echo ' class="flushright"';
+            }
+            echo '>';
+            echo $thispar;
+            echo '</p>' . PHP_EOL;
+        }
+        
+    }
     
     echo '</div>' . PHP_EOL; // end of version corediv
         
