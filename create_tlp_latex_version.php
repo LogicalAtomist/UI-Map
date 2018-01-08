@@ -355,8 +355,6 @@ if ($settings->multicolumnLayout) {
 
 \noindent See \url{http://creativecommons.org/licenses/by-sa/3.0/us/}
 
-\bigskip
-
 <?php if ($settings->useBookCoverImage) { ?>
 
 \bigskip 
@@ -364,6 +362,9 @@ if ($settings->multicolumnLayout) {
 The cover includes the photo “Ladders” by dev null, licensed under a Creative Commons Attribution Non-Commercial Share-Alike 2.0 License.
 
 <?php } ?>
+
+\bigskip
+
 \noindent Latest version available at: \url{http://people.umass.edu/klement/tlp/}
 <?php } ?>
 \end{document}
