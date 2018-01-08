@@ -334,7 +334,7 @@ function html_index_link_for($t) {
     }
     
     if (!($columns_mode)) {
-        return $t . ' ' . html_link_array_for($t, 'index', false);
+        return $t . html_link_array_for($t, 'index', false);
     }
     
     $anchor = $t;

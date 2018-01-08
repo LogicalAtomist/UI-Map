@@ -155,11 +155,13 @@ function html_link_array_for($pn,$version,$makeanchor) {
     $ba = base_anchor_for($pn);
     $s_abbr = version_abbreviation($version,true);
     $ns_abbr = version_abbreviation($version,false);
-    $r .= '<span class="linkarray"';
+    $r .= '<span class="linkarray';
+    $r .= ' tlpdepth' . depth_of($pn);
+    $r .= '"';
     if ($makeanchor) {
         $r .= ' id="' . $ba . $ns_abbr .'"';
     }
-    $r .= '>';
+    $r .= '> ';
     if ($version != 'index') {
         $r .= $s_abbr . ' ';
     }
@@ -279,7 +281,7 @@ function html_version($version) {
             $abbrev = version_abbreviation($version, false);
             echo '<a href="#fn1' . $abbrev . '" id="fn1marker' . $abbrev . '">*</a>';    
         }
-        echo ' ' . html_link_array_for($pn, $version,true);
+        echo html_link_array_for($pn, $version,true);
         echo '</div>' . PHP_EOL;
         // paragraph loop
         foreach($ptext->{$version} as $thispar) {
