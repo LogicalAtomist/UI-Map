@@ -179,6 +179,32 @@ function html_link_array_for($pn,$version,$makeanchor) {
     return $r;
 }
 
+function version_footnotes($version) {
+    echo '<div id="footnotes' . $version . '">' . PHP_EOL;
+    
+    if ($version == "Ogden") {
+        echo '<h4>Footnotes</h4>' . PHP_EOL;
+    } else {
+        echo '<h4>Footnote</h4>' . PHP_EOL;
+    }
+
+    if ($version == "German") {
+        echo '<p class="footnote" id="fn1GER"><a href="#fn1markerGER">*</a> <span id="germanfootnote1">Die Decimalzahlen als Nummern der einzelnen Sätze deuten das logische Gewicht der Sätze an, den Nachdruck, der auf ihnen in meiner Darstellung liegt. Die Sätze <var>n</var>.1, <var>n</var>.2, <var>n</var>.3, etc., sind Bemerkungen zum Sätze No. <var>n</var>; die Sätze <var>n</var>.<var>m</var>1, <var>n</var>.<var>m</var>2, etc. Bemerkungen zum Satze No. <var>n</var>.<var>m</var>; und so weiter.</span> <span class="linkarray">[→<a href="#fn1OGD" class="ogdlink">OGD</a><span class="beforepmclink"> | </span><a href="#fn1PM" class="pmclink">P/M</a>]</span></p>' . PHP_EOL;
+    }
+
+    if ($version == "Ogden") {
+        echo '<p class="footnote" id="fn1OGD"><a href="#fn1markerOGD">*</a> <span id="ogdenfootnote1">The decimal figures as numbers of the separate propositions indicate the logical importance of the propositions, the emphasis laid upon them in my exposition. The propositions <var>n</var>.1, <var>n</var>.2, <var>n</var>.3, etc., are comments on proposition No. <var>n</var>; the propositions <var>n</var>.<var>m</var>1, <var>n</var>.<var>m</var>2, etc., are comments on the proposition No. <var>n</var>.<var>m</var>; and so on.</span> <span class="linkarray">[→<a href="#fn1GER" class="gerlink">GER</a><span class="beforepmclink"> | </span><a href="#fn1PM" class="pmclink">P/M</a>]</span></p>'. PHP_EOL;
+        echo '<p class="footnote" id="fn2"><a href="#fn2marker">†</a> <em>I.e.</em> not the form of one particular law, but of any law of a certain sort (B.&thinsp;R.).</p>' . PHP_EOL; 
+
+    }
+    if ($version == "PearsMcGuinness") {
+        echo '<p class="footnote" id="fn1PM"><a href="#fn1markerPM">*</a> <span id="pmcfootnote1">The decimal numbers assigned to the individual propositions indicate the logical importance of the propositions, the stress laid on them in my exposition. The propositions <var>n</var>.1, <var>n</var>.2, <var>n</var>.3, etc. are comments on proposition no. <var>n</var>; the propositions <var>n</var>.<var>m</var>1, <var>n</var>.<var>m</var>2, etc. are comments on proposition no. <var>n</var>.<var>m</var>; and so on.</span> <span class="linkarray">[→<a href="#fn1GER" class="gerlink">GER</a><span class="aftergerlink"> | </span><a href="#fn1OGD" class="ogdlink">OGD</a>]</span></p>' . PHP_EOL;
+    }
+    
+    echo '</div>' . PHP_EOL;
+    
+}
+
 function html_version($version) {
     
     global $tlp;
@@ -212,7 +238,7 @@ function html_version($version) {
         // link array
         if ($pn != 'P9') {
             echo '<div class="preflinks">';
-            echo html_link_array_for($pn, $version,true);
+            echo html_link_array_for($pn, $version, true);
             echo '</div>' . PHP_EOL;
         }
         echo '<p>' . $ptext->{$version}[0] . '</p>' . PHP_EOL;
@@ -260,6 +286,8 @@ function html_version($version) {
         }
         
     }
+    
+    version_footnotes($version);
     
     echo '</div>' . PHP_EOL; // end of version corediv
         

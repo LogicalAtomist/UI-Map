@@ -324,6 +324,19 @@ function html_index_note() {
 }
 
 function html_index_link_for($t) {
+    
+    global $columns_mode;
+    
+    
+    if (mb_ereg_match('.*–', $t)) {
+        $parts = explode('–',$t,2);
+        return html_index_link_for($parts[0]) . '–' . html_index_link_for($parts[1]);
+    }
+    
+    if (!($columns_mode)) {
+        return $t . ' ' . html_link_array_for($t, 'index', false);
+    }
+    
     $anchor = $t;
     if (substr($anchor, 0, 1) == 'P') {
         $anchor = str_replace('P','#pref',$anchor);
@@ -335,7 +348,7 @@ function html_index_link_for($t) {
 }
 
 function html_index() {
-    
+        
     $entries = json_decode(file_get_contents(dirname(__FILE__) . '/tlp_index.json')) ?? 'ERROR';
     
     if ($entries==='ERROR') {
