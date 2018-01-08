@@ -357,6 +357,13 @@ if ($settings->multicolumnLayout) {
 
 \bigskip
 
+<?php if ($settings->useBookCoverImage) { ?>
+
+\bigskip 
+        
+The cover includes the photo “Ladders” by dev null, licensed under a Creative Commons Attribution Non-Commercial Share-Alike 2.0 License.
+
+<?php } ?>
 \noindent Latest version available at: \url{http://people.umass.edu/klement/tlp/}
 <?php } ?>
 \end{document}

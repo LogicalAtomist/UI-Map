@@ -10,12 +10,16 @@ if (!(isset($tlp->{'P1'}))) {
 
 // process settings
 $columns_mode = true;
+$epub_mode = false;
 $settings_str = '';
 if (isset($argv[1])) {
     $settings_str = $argv[1];
 }
 if (mb_ereg_match('.*nocolumns',$settings_str)) {
     $columns_mode = false;
+}
+if (mb_ereg_match('.*epub',$settings_str)) {
+    $epub_mode = true;
 }
 
 ?>
@@ -141,6 +145,11 @@ if (mb_ereg_match('.*nocolumns',$settings_str)) {
             <p class="licensep">
                 <span class="ccicongroup"><object data="images/pd.svg" type="image/svg+xml" class="ccicon"><img src="images/pd.png" alt="[PD]" class="ccicon" /></object></span> <span class="sflabel">Ludwig Wittgenstein’s <i>Tractatus Logico-Philosophicus</i> is in the Public Domain.</span></p>
             <p class="licensep"><span class="ccicongroup"><object data="images/cc.svg" type="image/svg+xml" class="ccicon"><img src="images/cc.png" alt="[CC]" class="ccicon" /></object> <object data="images/by.svg" type="image/svg+xml" class="ccicon"><img src="images/by.png" alt="[BY]" class="ccicon" /></object> <object data="images/sa.svg" type="image/svg+xml" class="ccicon"><img src="images/sa.png" alt="[SA]" class="ccicon" /></object></span> <span class="sflabel">The layout of the side-by-side-by-side edition, including HTML mark-up and related content, by Kevin C. Klement, is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Attribution—Share Alike 3.0 United States License</a>.</span></p>
+            <?php if ($epub_mode) { ?>
+            
+            <p class="licensep sflabel">The cover includes the photo “Ladders” by dev null, licensed under a Creative Commons Attribution Non-Commercial Share-Alike 2.0 License.</p>
+            <?php } ?>
+            
             <p class="licensep sflabel">Latest version available at the project page: <a href="http://people.umass.edu/klement/tlp/">http://people.umass.edu/klement/tlp/</a></p>
         </div>
     </body>
