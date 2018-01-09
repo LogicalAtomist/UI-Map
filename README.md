@@ -66,7 +66,7 @@ These are JSON settings files that are used to create the PDF versions hosted on
 
     a. **minDepth**: *Integer.* The minimum number of digits after the decimal place a given proposition/remark must have to be included in the pass. The usual value here would be 0, unless you only want to include remarks, but not what they are remarks about.
     
-    b. **maxDepth**: *Integer.* Like mindepth, but the maximum number of digits. Possible values here are 0 through 5.
+    b. **maxDepth**: *Integer.* Like minDepth, but the maximum number of digits. Possible values here are 0 through 5.
     
     c. **startProposition**: *String.* Where in the text to start the pass; the usual value is "1". Note that this value is a string, not a float, and should be in quotation marks in the JSON.
     
