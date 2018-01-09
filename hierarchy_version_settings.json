@@ -26,12 +26,6 @@
         },
         {
             "minDepth": 0,
-            "maxDepth": 4,
-            "startProposition": "1",
-            "endProposition": "7"
-        },
-        {
-            "minDepth": 0,
             "maxDepth": 5,
             "startProposition": "1",
             "endProposition": "7"
