@@ -2,15 +2,21 @@
 
 ## Side-by-side-by-side Edition master text files ##
 
-If you are looking for the *finished product*, please visit the project page for the [Side-by-Side-by-Side Edition of Wittgenstein's *Tractatus*](http://people.umass.edu/klement/tlp/).
+If you are looking for the  *finished product*, please visit the project page for the [Side-by-Side-by-Side Edition of Wittgenstein's *Tractatus*](http://people.umass.edu/klement/tlp/).
 
 This repository is for the master upstream text source files and processing scripts code.
 
-### The important files in this repository ###
+If you are using UNIX-like operating system (GNU/Linux, MacOS, Cygwin or Windows subsystem for Linux), you can download/clone this repo with the command:
 
-#### 1. tlp_latex.json ####
+`$ git clone https://bitbucket.org/frabjous/tractatus/tractatus.git`
 
-This is JSON file which represents the TLP as an object in which each "proposition number" is mapped to a sub-object with three properties, "German", "Ogden" and "Pears and McGuinness", each of which is an array containing the text, using LaTeX mark-up, of the successive paragraphs of that proposition/section number, in German, or in one of the two translations. E.g.:
+The important files in this repository are described below.
+
+### LaTeX/PDF related files
+
+#### tlp_latex.json
+
+This is JSON file which represents the TLP as an object in which each "proposition number" is mapped to a sub-object with three properties, "German", "Ogden" and "PearsMcGuinness", each of which is an array containing the text, using LaTeX mark-up, of the successive paragraphs of that proposition/section number, in German, or in one of the two translations. E.g.:
 
 ~~~
     ...
@@ -30,11 +36,11 @@ This is JSON file which represents the TLP as an object in which each "propositi
 
 The paragraphs of the preface come first and are given designations such a "P1" for paragraph one of the preface, matching the conventions in the index.
 
-Note that the values use custom LaTeX commands defined in the file `tlp_latex_custom_commands.tex`, and so this file, or a replacement for it, must be included one way or another in order for the LaTeX code to be used. The file also contains *unescaped* UTF-8 encoded Unicode characters such as ß, ä, —, etc, and so it should be edited with UTF-8/Unicode compliant editors, and the LaTeX `inputenc` package with the `utf8` option should always be loaded.
+Note that the values use custom LaTeX commands defined in the file `tlp_latex_custom_commands.tex`, and so this file, or a replacement for it, must be included one way or another in order for the LaTeX code to be used. The file also contains *unescaped* UTF-8 encoded Unicode characters such as ß, ä, —, etc, and so it should be edited only with UTF-8/Unicode compliant editors, and the LaTeX `inputenc` package with the `utf8` option should always be loaded.
 
 This is the "master" text file, and future alterations to the text should be made to this file to propagate to other versions.
 
-#### 2. create_tlp_latex_version.php ####
+#### create_tlp_latex_version.php
 
 This is a PHP script which uses the JSON file mentioned above and writes a complete regular LaTeX file to stdout. The output can be redirected to a file as such:
 
@@ -44,17 +50,17 @@ Or it can be piped directly to `pdflatex` or similar to create a PDF file:
 
 `$ php create_tlp_latex_version.php | pdflatex -jobname tlp`
 
-This script can optionally take a single argument. This argument should be the name of a `.json` file which species settings for the output document. For example, to create the ebook version:
+This script can optionally take a single argument. This argument should be the name of a `.json` file which specifies custom settings for the output document. For example, to create the ebook version:
 
 `$ php create_tlp_latex_version.php ebook_latex_settings.json | pdflatex -jobname tlp-ebook`
 
 (If no option is given, it uses `default_latex_settings.json`.)
 
-This script was written for PHP 7.2+; I do not know whether or not is compatible with earlier PHP versions.
+This and the other PHP scripts were written for PHP 7.2+; I do not know whether or not they are compatible with earlier PHP versions.
 
-#### 3., 4., 5. default_latex_settings.json, ebook_latex_settings.json, hierarchy_version_settings.json ####
+#### default_latex_settings.json, ebook_latex_settings.json, hierarchy_version_settings.json ####
 
-These are JSON settings files that are used to create the PDF versions hosted on the project's main web page. See one of the files for the precise format. Here are some of the options.
+These are JSON settings files that are used to create the PDF versions hosted on the project's main web page. See one of the files for the precise format. Here are the options.
 
 1. **passes**:  *Array.* Each element of the array represents a part of the text which is to be typeset in one pass-through.  They each have four sub-options:
 
@@ -84,7 +90,7 @@ These are JSON settings files that are used to create the PDF versions hosted on
 
 10. **columnsForIndex**: *Integer.* Number of columns for typsetting the index.
 
-11. **includeLicsenInfo**: *Boolean.* Whether or not to include a short statement of the licenses of the text, the typesetting, and a link to the project page.
+11. **includeLicenseInfo**: *Boolean.* Whether or not to include a short statement of the licenses of the text, the typesetting, and a link to the project page.
 
 12. **useBookCoverImage**: *Boolean.* If true, and a cover page is used, creates a graphical cover as the first page of the PDF.
 
@@ -104,27 +110,73 @@ These are JSON settings files that are used to create the PDF versions hosted on
 
 The use of multiple passes is typically used to represent different stages in the "hierarchy" of TLP. This array may have only a single element if you want to typeset the entire book in one pass, or just a single stage in the hierarchy.
 
-You can of course create additional settings files of your own to create new custom versions.
+You can create additional settings files of your own to create new custom versions.
 
-#### 6., 7., 8. tlp_index.json, index_note.tex, tlp_russells_intro.tex ###
+#### tlp_index.json, index_note.tex, tlp_russells_intro.tex ###
 
 These are other "master" files containing ancillary text (with content suggested by their filenames), and are sometimes required by `create_tlp_latex_version.php` depending on settings.
 
-#### 9. tlp_latex_custom_commands.tex ####
+#### tlp_latex_custom_commands.tex ####
 
 A LaTeX fragment in which various LaTeX commands used in the values inside tlp_latex.json are defined.
 
-#### 10. libtlp.php ####
+#### libtlp.php ####
 
-A library of PHP functions used by `create_tlp_latex_version.php`, and perhaps eventually, other scripts related to the project.
+A library of PHP functions used by `create_tlp_latex_version.php`.
 
-#### 11. cover.jpg ####
+#### cover.jpg ####
 
-The image used as a cover if `useBookCoverImage` is set to `true`;
+The image used as a cover if `useBookCoverImage` is set to `true`; it is also used in the ePub version. It includes the photo “Ladders” by dev null, licensed under a Creative Commons Attribution Non-Commercial Share-Alike 2.0 License.
 
-### To Do ###
+------------------
 
-Coming, hopefully soon, will be a script for converting the LaTeX-based JSON to HTML-based JSON, and other scripts for creating HTML-based and ePub versions.
+### HTML/ePub related files ###
+
+#### json_tex2html.php ###
+
+This is a script which reads `tlp_latex.json`, converts the LaTeX mark-up, and outputs JSON with HTML-encoded values. Usage:
+
+`$ php json_tex2html.php > tlp_html.json`
+
+#### tlp_html.json ####
+
+The most recent output of the above script. *Note this file should not be edited directly.* Changes should be made to `tlp_latex.json`, and the script rerun.
+
+#### create_tlp_html_version.html ####
+
+A script that uses `tlp_html.json` to create and output an HTML-version of the book. Typical usage:
+
+`$ php create_tlp_html_version.html > tlp.html`
+
+It can take a comma separated list of options. Currently, there are two options defined. `nocolumns` will typeset the different versions of the text, one after another, hyperlinked, rather than next to each other in a big table. `epub` will omit the javascript for the settings button/panel. These may be used together, e.g.:
+
+`$ php create_tlp_html_version.html "nocolumns,epub" > tlp-epubsource.html`
+
+The above command will produce an HTML document suitable for creating the ePub version, using [calibre](https://calibre-ebook.com):
+
+`$ ebook-convert tlp-epubsource.html tlp.epub --cover cover.jpg --disable-remove-fake-margins`
+
+Note that this this script does not run `json_tex2html.php`, and assumes it has already been run since the most recent changes to `tlp_latex.json`.
+
+#### tlp.css, settings_panel.css, settings_panel.js ####
+
+Style sheets and javascript code included inside the HTML versions created by `create_tlp_html_version.php` for the side-by-side-by-side edition.
+
+#### images/* ####
+
+SVG and PNG versions of the diagrams in the book. These are loaded by the HTML-based versions.
+
+#### libhtmltlp.php, libconverttlp.php ####
+
+These are PHP function libraries needed for the scripts above.
+
+#### html_substitutions.json ####
+
+This file contains HTML mark-up substitutions for parts of the book where the LaTeX commands are too hard to translate faithfully using the scripts above. Think of it as the HTML equivalent of `tlp_latex_custom_commands.tex`. It is required for `json_tex2html.php`.
+
+#### make_all_versions.sh ####
+
+This is shell script which runs all the above scripts to create a completely new set of files for the side-by-side-by-side website. It would only work on my computer, however, without modifications.
 
 ### License ###
 

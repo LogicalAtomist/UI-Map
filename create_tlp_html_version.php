@@ -38,13 +38,13 @@ if (mb_ereg_match('.*epub',$settings_str)) {
         <meta name="source" content="German text plus Ogden-Ramsey and Pears-McGuinness translations" />
         <meta name="rights" content="Public Domain" />
         
-        <!-- if mobile ready -->
+        <?php if (!($columns_mode)) { ?>
+        <!-- mobile ready -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="applie-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
+        <?php } ?>
         
-        <!-- web icon -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <title>Tractatus Logico-Philosophicus | Side-by-side-by-side edition</title>
         
         <!-- css -->
@@ -56,7 +56,7 @@ if (mb_ereg_match('.*epub',$settings_str)) {
         </style>
         
         <?php if (!($epub_mode)) { 
-            echo '<script type="text/javascript">' . PHP_EOL;
+            echo '<script>' . PHP_EOL;
             readfile(dirname(__FILE__) . '/settings_panel.js'); 
             echo PHP_EOL . '</script>' . PHP_EOL;
         } ?>
