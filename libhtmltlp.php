@@ -1,5 +1,7 @@
 <?php
 
+// License: GPLv3
+
 require 'libconverttlp.php';
 
 date_default_timezone_set('America/New_York');

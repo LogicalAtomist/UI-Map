@@ -1,5 +1,7 @@
 <?php
 
+// License: GPLv3
+
 require 'libhtmltlp.php';
 
 $tlp = json_decode(file_get_contents(dirname(__FILE__) . '/tlp_html.json'));

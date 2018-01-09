@@ -1,5 +1,7 @@
 <?php
 
+// License: GPLv3
+
 require 'libconverttlp.php';
 
 $tex_json_filename = dirname(__FILE__) . '/tlp_latex.json';

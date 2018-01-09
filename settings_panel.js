@@ -1,4 +1,6 @@
 
+// License: GPLv3
+
 window.settings={};
 
 function creAdd(tagType, parNode, styclasses, idToUse) {

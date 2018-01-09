@@ -1,5 +1,7 @@
 <?php
 
+// License: GPLv3
+
 function remove_tex_comments($tex) {
     $lines = explode(PHP_EOL, $tex);
     $r_array = array();

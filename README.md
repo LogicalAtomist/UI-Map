@@ -172,11 +172,11 @@ These are PHP function libraries needed for the scripts above.
 
 #### html_substitutions.json ####
 
-This file contains HTML mark-up substitutions for parts of the book where the LaTeX commands are too hard to translate faithfully using the scripts above. Think of it as the HTML equivalent of `tlp_latex_custom_commands.tex`. It is required for `json_tex2html.php`.
+This file contains HTML mark-up substitutions for parts of the book where the LaTeX commands cannot be easily converted programmatically. Think of it as the HTML equivalent of `tlp_latex_custom_commands.tex`. It is required for `json_tex2html.php`.
 
 #### make_all_versions.sh ####
 
-This is shell script which runs all the above scripts to create a completely new set of files for the side-by-side-by-side website. It would only work on my computer, however, without modifications.
+This is sa hell script which runs all the above to create a completely new set of files for the side-by-side-by-side website. It would only work on my computer, however, without modifications.
 
 ### License ###
 

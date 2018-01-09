@@ -1,5 +1,7 @@
 #!/bin/bash
-
+#
+# License: GPLv3
+#
 if [[ ! -e "$HOME/bin/kckcolor.sh" ]] ; then
     echo "Sorry this script is meant for Kevin’s use only." > /dev/stderr
     exit 1
