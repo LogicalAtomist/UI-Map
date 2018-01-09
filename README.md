@@ -118,7 +118,7 @@ These are other "master" files containing ancillary text (with content suggested
 
 #### tlp_latex_custom_commands.tex ####
 
-A LaTeX fragment in which various LaTeX commands used in the values inside tlp_latex.json are defined.
+A LaTeX fragment in which various LaTeX commands used in the values inside `tlp_latex.json` are defined.
 
 #### libtlp.php ####
 
@@ -176,7 +176,7 @@ This file contains HTML mark-up substitutions for parts of the book where the La
 
 #### make_all_versions.sh ####
 
-This is sa hell script which runs all the above to create a completely new set of files for the side-by-side-by-side website. It would only work on my computer, however, without modifications.
+This is a shell script which runs all the above to create a completely new set of files for the side-by-side-by-side website. It would only work on my computer, however, without modifications.
 
 ### License ###
 
