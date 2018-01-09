@@ -81,6 +81,7 @@ table {
 }
 .quant {
     padding-right: 0.2em;
+    white-space: nowrap;
 }
 .mathrel {
     padding-left: 0.25em;

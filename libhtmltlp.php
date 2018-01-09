@@ -222,7 +222,9 @@ function html_version($version) {
         $tlp->{'6.32'}->Ogden[0] = mb_ereg_replace('\*','<a href="#fn2" id="fn2marker">†</a>',$tlp->{'6.32'}->Ogden[0]);
     }
     
-    echo '<div id="corediv' . $version . '" class="versionbigdiv">' . PHP_EOL;
+    echo '<div id="corediv' . $version . '" class="versionbigdiv';
+    echo ' bigdiv' . $version;
+    echo '">' . PHP_EOL;
     
     echo '<hr />' . PHP_EOL;
     
