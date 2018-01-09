@@ -545,7 +545,7 @@
     {
         "isSubEntry": true,
         "isSubSubEntry": false,
-        "entryname": "2. [\textit{zusprechen}]",
+        "entryname": "2. [\\textit{zusprechen}]",
         "refs": [
             {
                 "target": "4.124"
