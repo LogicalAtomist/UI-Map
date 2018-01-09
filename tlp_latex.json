@@ -5695,7 +5695,7 @@
             "in the following way",
             "\\[\\omop[0] x,\\thickspace \\omop[0+1] x,\\thickspace \\omop[0+1+1] x,\\thickspace \\omop[0+1+1+1] x, \\thickspace \\dots \\]",
             "Therefore, instead of ‘$[x,\\thickspace \\xi,\\thickspace \\omop \\xi]$’,",
-            "\\[\\text{I write} \\qquad \\text{‘}[\\omop[0] x,\\thickspace \\omop[\\nu] x,\\thickspace \\omop[\\nu + 1] x]\\text{’}.\\]",
+            "\\[\\mathrm{I\\ write} \\qquad \\text{‘}[\\omop[0] x,\\thickspace \\omop[\\nu] x,\\thickspace \\omop[\\nu + 1] x]\\text{’}.\\]",
             "And I give the following definitions",
             "\\sixzerotwostacktwopmc"
         ]
