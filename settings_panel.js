@@ -291,7 +291,7 @@ function createSettingsPanel() {
 
     var idiv = creAdd("div",d,["idiv"]);
     window.settings.fontColorInput = creAdd("input",idiv,[],"fontcolorselector");
-    window.settings.fontColorInput.type="color";
+    try { window.settings.fontColorInput.type="color"; } catch(err) {};
     var l = creAdd("label",idiv);
     l.htmlFor = "fontcolorselector";
     l.innerHTML = "Color";
@@ -317,7 +317,7 @@ function createSettingsPanel() {
 
     var idiv = creAdd("div",d,["idiv"]);
     window.settings.bgColorInput = creAdd("input",idiv,[],"bgcolorselector");
-    window.settings.bgColorInput.type="color";
+    try { window.settings.bgColorInput.type="color"; } catch(err) {};
     var l = creAdd("label",idiv);
     l.htmlFor = "bgcolorselector";
     l.innerHTML = "Background color";
@@ -325,21 +325,21 @@ function createSettingsPanel() {
 
     var idiv = creAdd("div",d,["idiv"]);
     window.settings.gerColorInput = creAdd("input",idiv,[],"gercolorselector");
-    window.settings.gerColorInput.type="color";
+    try { window.settings.gerColorInput.type="color"; } catch(err) {};
     var l = creAdd("label",idiv);
     l.htmlFor = "gercolorselector";
     l.innerHTML = "German BG color";
 
     var idiv = creAdd("div",d,["idiv"]);
     window.settings.ogdColorInput = creAdd("input",idiv,[],"ogdcolorselector");
-    window.settings.ogdColorInput.type="color";
+    try { window.settings.ogdColorInput.type="color"; } catch(err) {};
     var l = creAdd("label",idiv);
     l.htmlFor = "ogdcolorselector";
     l.innerHTML = "Ogden BG color";
 
     var idiv = creAdd("div",d,["idiv"]);
     window.settings.pmcColorInput = creAdd("input",idiv,[],"pmccolorselector");
-    window.settings.pmcColorInput.type="color";
+    try { window.settings.pmcColorInput.type="color"; } catch(err) {};
     var l = creAdd("label",idiv);
     l.htmlFor = "pmccolorselector";
     l.innerHTML = "Pears/McGuinness BG color";
