@@ -52,6 +52,8 @@ function resetSettings() {
     window.settings.pmcCB.checked = true;
     window.settings.minDepth.value = 0;
     window.settings.maxDepth.value = 5;
+    window.settings.minDepth.showMyVal();
+    window.settings.maxDepth.showMyVal();
     window.settings.fontSelector.selectedIndex = 0;
     window.settings.fontSizeInput.value = 16;
     window.settings.fontColorInput.value = '#000000';
@@ -156,7 +158,7 @@ function applySettings() {
         [window.settings.licenseCB.checked, ["licenseDiv"]],
         [window.settings.settingsCB.checked, ["settingsbuttonbg"]],
         [window.settings.germanCB.checked, ["ger","gerpref","bigdivGerman","gerlink","gertoc","aftergerlink","gerhdr"]],
-        [window.settings.ogdenCB.checked, ["ogd","ogdpref","bigdivOgden","ogdlink","ogdtoc","ogdhdr", "ogdnote"]],
+        [window.settings.ogdenCB.checked, ["ogd","ogdpref","bigdivOgden","ogdlink","ogdtoc","ogdhdr", "ogdnote","aftergermanlink"]],
         [window.settings.pmcCB.checked, ["pmc","pmcpref","bigdivPearsMcGuinness","pmclink","beforepmclink","pmctoc","pmchdr"]]
     ];
     for (var x=0; x<toCheck.length; x++) {
@@ -166,6 +168,18 @@ function applySettings() {
             toHide = toHide.concat(toCheck[x][1]);
         }
     }
+    
+    var mind = parseInt(window.settings.minDepth.value);
+    var maxd = parseInt(window.settings.maxDepth.value);
+    
+    for (var tlpdepth = 0; tlpdepth<6; tlpdepth++) {
+        if ((tlpdepth >= mind) && (tlpdepth <= maxd)) {
+            toUnHide.push("tlpdepth" + tlpdepth);
+        } else {
+            toHide.push("tlpdepth" + tlpdepth);
+        }
+    }
+    
     unHideTheseClasses(toUnHide);
     hideTheseClasses(toHide);
     
@@ -213,6 +227,13 @@ function createSettingsPanel() {
         sl.max = max;
         var t2 = creAdd("span",idiv);
         t2.innerHTML = '(' + max + ') ';
+        sl.valueIndicator = creAdd("span",idiv);
+        sl.onchange = function() {
+            this.showMyVal();
+        }
+        sl.showMyVal = function() {
+            this.valueIndicator.innerHTML = 'Value: ' + this.value;
+        }
         return sl;
     }
     window.settings.coverPageCB = d.getcb("cover page","cover");

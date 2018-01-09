@@ -10,6 +10,9 @@ svg {
 h1 {
     text-align: center;
 }
+h2, h4, h3 {
+    text-align: left;
+}
 h1.germantitle {
     font-style: italic;
 }
@@ -310,7 +313,7 @@ p.footnote, p.licensep {
     margin-top: 1ex;
     clear: both;
 }
-#licenseinfo, #indexdiv {
+#licenseinfo, #indexentries, #contents {
     text-align: left;
 }
 span.kckaddition {
