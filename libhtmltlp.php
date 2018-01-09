@@ -29,9 +29,9 @@ function columns_preface() {
 <table class="prefacetable">
     <thead>
         <tr class="prefheaderrow">
-            <th class="prefheadercell">German</th>
-            <th class="prefheadercell">Ogden</th>
-            <th class="prefheadercell">Pears/McGuinness</th>
+            <th class="prefheadercell gerhdr">German</th>
+            <th class="prefheadercell ogdhdr">Ogden</th>
+            <th class="prefheadercell pmchdr">Pears/McGuinness</th>
         </tr>
     </thead>
     <tbody>
@@ -80,9 +80,9 @@ function columns_maintext() {
     <thead>
         <tr class="headerrow">
             <th class="numheader"></th>
-            <th class="headercell">German</th>
-            <th class="headercell">Ogden</th>
-            <th class="headercell">Pears/McGuinness</th>
+            <th class="headercell gerhdr">German</th>
+            <th class="headercell ogdhdr">Ogden</th>
+            <th class="headercell pmchdr">Pears/McGuinness</th>
         </tr>
     </thead>
     <tbody>
@@ -226,7 +226,6 @@ function html_version($version) {
     echo ' bigdiv' . $version;
     echo '">' . PHP_EOL;
     
-    echo '<hr />' . PHP_EOL;
     
     // VERSION PREFACE
     
@@ -303,6 +302,8 @@ function html_version($version) {
     }
     
     version_footnotes($version);
+    
+    echo '<hr />' . PHP_EOL;
     
     echo '</div>' . PHP_EOL; // end of version corediv
         
