@@ -103,6 +103,9 @@ table.fnlist {
     vertical-align: top;
     font-size: 70%;
 }
+table.fnlist td {
+    vertical-align: top;
+}
 td.righttight {
     padding: 0px;
     border: none;
