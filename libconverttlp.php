@@ -286,7 +286,7 @@ function tex_to_html($tex, $do_big_subs = true) {
     $t=mb_ereg_replace('<nbsp>','&nbsp;', $t);
     
     // restore five dashes
-    $t = mb_ereg_replace('⊚⊚⊚⊚⊚', '-----', $t);
+    $t = mb_ereg_replace('⊚⊚⊚⊚⊚', '−−−−−', $t);
     
     // handle_big_substitutions
     if ($do_big_subs) {

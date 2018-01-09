@@ -4710,15 +4710,15 @@
     },
     "5.5": {
         "German": [
-            "Jede Wahrheitsfunktion ist ein Resultat der successiven Anwendung der Operation <span class=\"mathmode\"><span class=\"mathop\">(-----<span class=\"mathrm\">W<\/span>)<\/span> (<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span> auf Elementarsätze.",
+            "Jede Wahrheitsfunktion ist ein Resultat der successiven Anwendung der Operation <span class=\"mathmode\"><span class=\"mathop\">(−−−−−<span class=\"mathrm\">W<\/span>)<\/span> (<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span> auf Elementarsätze.",
             "Diese Operation verneint sämtliche Sätze in der rechten Klammer, und ich nenne sie die Negation dieser Sätze."
         ],
         "Ogden": [
-            "Every truth-function is a result of the successive application of the operation <span class=\"mathmode\"><span class=\"mathop\">(-----<span class=\"mathrm\">T<\/span>)<\/span> (<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span> to elementary propositions.",
+            "Every truth-function is a result of the successive application of the operation <span class=\"mathmode\"><span class=\"mathop\">(−−−−−<span class=\"mathrm\">T<\/span>)<\/span> (<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span> to elementary propositions.",
             "This operation denies all the propositions in the right-hand bracket and I call it the negation of these propositions."
         ],
         "PearsMcGuinness": [
-            "Every truth-function is a result of successive applications to elementary propositions of the operation ‘<span class=\"mathmode\"><span class=\"mathop\">(-----<span class=\"mathrm\">T<\/span>)<\/span><\/span> <span class=\"mathmode\">(<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span>’.",
+            "Every truth-function is a result of successive applications to elementary propositions of the operation ‘<span class=\"mathmode\"><span class=\"mathop\">(−−−−−<span class=\"mathrm\">T<\/span>)<\/span><\/span> <span class=\"mathmode\">(<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span>’.",
             "This operation negates all the propositions in the right-hand pair of brackets, and I call it the negation of those propositions."
         ]
     },
@@ -4750,15 +4750,15 @@
     },
     "5.502": {
         "German": [
-            "Ich schreibe also statt „<span class=\"mathmode\"><span class=\"mathop\">(-----<span class=\"mathrm\">W<\/span>)<\/span><\/span> <span class=\"mathmode\">(<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span>“ „<span class=\"mathmode\"><span class=\"nop\">N<\/span>(<span class=\"overlined\"><var>ξ<\/var><\/span>)<\/span>“.",
+            "Ich schreibe also statt „<span class=\"mathmode\"><span class=\"mathop\">(−−−−−<span class=\"mathrm\">W<\/span>)<\/span><\/span> <span class=\"mathmode\">(<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span>“ „<span class=\"mathmode\"><span class=\"nop\">N<\/span>(<span class=\"overlined\"><var>ξ<\/var><\/span>)<\/span>“.",
             "<span class=\"mathmode\"><span class=\"nop\">N<\/span>(<span class=\"overlined\"><var>ξ<\/var><\/span>)<\/span> ist die Negation sämtlicher Werte der Satzvariablen <span class=\"mathmode\"><var>ξ<\/var><\/span>."
         ],
         "Ogden": [
-            "Therefore I write instead of “<span class=\"mathmode\"><span class=\"mathop\">(-----<span class=\"mathrm\">T<\/span>)<\/span><\/span> <span class=\"mathmode\">(<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span>”, “<span class=\"mathmode\"><span class=\"nop\">N<\/span>(<span class=\"overlined\"><var>ξ<\/var><\/span>)<\/span>”.",
+            "Therefore I write instead of “<span class=\"mathmode\"><span class=\"mathop\">(−−−−−<span class=\"mathrm\">T<\/span>)<\/span><\/span> <span class=\"mathmode\">(<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span>”, “<span class=\"mathmode\"><span class=\"nop\">N<\/span>(<span class=\"overlined\"><var>ξ<\/var><\/span>)<\/span>”.",
             "<span class=\"mathmode\"><span class=\"nop\">N<\/span>(<span class=\"overlined\"><var>ξ<\/var><\/span>)<\/span> is the negation of all the values of the propositional variable <span class=\"mathmode\"><var>ξ<\/var><\/span>."
         ],
         "PearsMcGuinness": [
-            "So instead of ‘<span class=\"mathmode\"><span class=\"mathop\">(-----<span class=\"mathrm\">T<\/span>)<\/span><\/span> <span class=\"mathmode\">(<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span>’, I write ‘<span class=\"mathmode\"><span class=\"nop\">N<\/span>(<span class=\"overlined\"><var>ξ<\/var><\/span>)<\/span>’.",
+            "So instead of ‘<span class=\"mathmode\"><span class=\"mathop\">(−−−−−<span class=\"mathrm\">T<\/span>)<\/span><\/span> <span class=\"mathmode\">(<var>ξ<\/var>,&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.)<\/span>’, I write ‘<span class=\"mathmode\"><span class=\"nop\">N<\/span>(<span class=\"overlined\"><var>ξ<\/var><\/span>)<\/span>’.",
             "<span class=\"mathmode\"><span class=\"nop\">N<\/span>(<span class=\"overlined\"><var>ξ<\/var><\/span>)<\/span> is the negation of all the values of the propositional variable <span class=\"mathmode\"><var>ξ<\/var><\/span>."
         ]
     },
